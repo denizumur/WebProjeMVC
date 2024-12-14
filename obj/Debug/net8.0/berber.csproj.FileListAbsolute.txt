@@ -166,3 +166,6 @@ C:\Users\dnz\source\repos\berber\berber\obj\Debug\net8.0\refint\berber.dll
 C:\Users\dnz\source\repos\berber\berber\obj\Debug\net8.0\berber.pdb
 C:\Users\dnz\source\repos\berber\berber\obj\Debug\net8.0\berber.genruntimeconfig.cache
 C:\Users\dnz\source\repos\berber\berber\obj\Debug\net8.0\ref\berber.dll
+C:\Users\Win 10\Desktop\webprojesi\berber\obj\Debug\net8.0\berber.dll
+C:\Users\Win 10\Desktop\webprojesi\berber\obj\Debug\net8.0\refint\berber.dll
+C:\Users\Win 10\Desktop\webprojesi\berber\obj\Debug\net8.0\berber.pdb

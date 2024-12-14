@@ -8,8 +8,8 @@ namespace berber.Models
         public int CalisanID { get; set; }  // EmployeeID
         public string AdSoyad { get; set; }  // AdSoyad
         public string UzmanlikAlanlari { get; set; }  // UzmanlikAlanlari
-        public string UygunlukSaatleri { get; set; }  // UygunlukSaatleri
-
+        public string UygunlukSaatleri { get; set; }  // UygunlukSaatleri         
+        
        
     }
 }
