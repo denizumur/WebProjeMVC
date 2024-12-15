@@ -6,10 +6,18 @@ namespace berber.Models
     {
         [Key]
         public int KullaniciID { get; set; }  // UserID
+
+        [Display (Name = "Kullanıcı Adı")]
         public string AdSoyad { get; set; }  // AdSoyad
-        public DateTime UyelikTarihi { get; set; }  // Email
-        public string Telefon { get; set; }  // Telefon
-        public string Sifre { get; set; }  // Sifre
+
+		[Display(Name = "Kullanıcı Üyelik Tarihi")]
+		public DateTime UyelikTarihi { get; set; }  // Tarih
+
+		[Display(Name = "Kullanıcı Telefon Numarası")]
+		public string Telefon { get; set; }  // Telefon
+
+		[Display(Name = "Kullanıcı Şifresi")]
+		public string Sifre { get; set; }  // Sifre
 
         // İlişkiler
        
