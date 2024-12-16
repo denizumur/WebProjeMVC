@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo Örneği</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Kuaför/Berber Salonu İşlem Tablosu</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>İşlem</th>
+                <th>Süre</th>
+                <th>Ücret</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Saç Kesimi</td>
+                <td>30 dk</td>
+                <td>50 TL</td>
+            </tr>
+            <tr>
+                <td>Saç Bakımı</td>
+                <td>45 dk</td>
+                <td>80 TL</td>
+            </tr>
+            <tr>
+                <td>Saç Rengi</td>
+                <td>60 dk</td>
+                <td>120 TL</td>
+            </tr>
+            <tr>
+                <td>Saç Düzlemesi</td>
+                <td>30 dk</td>
+                <td>70 TL</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+

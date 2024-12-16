@@ -1,0 +1,89 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            /* Sidebar Styles */
+            .w3-sidebar-custom {
+                height: 100%;
+                background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 150px;
+                padding-top: 20px;
+                transition: all 0.3s ease; /* Smooth transition */
+            }
+
+                /* Sidebar Item Styles */
+                .w3-sidebar-custom .w3-bar-item {
+                    padding: 15px;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: white;
+                    border-bottom: 1px solid #fff;
+                    transition: background-color 0.3s ease;
+                }
+
+                    .w3-sidebar-custom .w3-bar-item:hover {
+                        background-color: #ffb6b9; /* Hover effect */
+                    }
+
+            /* Page Content Style */
+            .w3-container-custom {
+                margin-left: 150px;
+                padding: 20px;
+            }
+
+            /* Header Styling */
+            .w3-header-custom {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+
+            /* Image Style */
+            .w3-image-custom {
+                width: 100%;
+                border-radius: 8px; /* Rounded corners for images */
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Sidebar -->
+        <div class="w3-sidebar w3-sidebar-custom">
+            <h3 class="w3-bar-item">Menüler</h3>
+            <a href="#" class="w3-bar-item w3-button">İşlemler</a>
+            <a href="#" class="w3-bar-item w3-button">Çalışanlar</a>
+            <a href="#" class="w3-bar-item w3-button">Hakkımızda</a>
+            <a href="#" class="w3-bar-item w3-button">Çıkış</a>
+            
+        </div>
+
+        <!-- Page Content -->
+        <div class="w3-container-custom">
+
+            <div class="w3-header-custom">
+                <h1>Berber</h1>
+            </div>
+
+            
+
+            <div class="w3-container">
+                @RenderBody()
+            </div>
+
+        </div>
+
+    </body>
+    </html>
+
+}

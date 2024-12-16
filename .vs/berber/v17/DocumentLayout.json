@@ -1,33 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\",
+  "WorkspaceRootPath": "C:\\Users\\dnz\\Desktop\\berber\\berber\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesi\\berber\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\dnz\\desktop\\berber\\berber\\views\\islem\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\islem\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesi\\berber\\views\\register\\kayit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\register\\kayit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\dnz\\desktop\\berber\\berber\\controllers\\islem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:controllers\\islem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesi\\berber\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\dnz\\desktop\\berber\\berber\\views\\shared\\_testlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\shared\\_testlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesi\\berber\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesi\\berber\\models\\kullanici.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:models\\kullanici.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesi\\berber\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\dnz\\desktop\\berber\\berber\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesi\\berber\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\dnz\\desktop\\berber\\berber\\controllers\\calisanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:controllers\\calisanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\dnz\\desktop\\berber\\berber\\views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\login\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\dnz\\desktop\\berber\\berber\\views\\register\\kayit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\register\\kayit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\dnz\\desktop\\berber\\berber\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\dnz\\desktop\\berber\\berber\\controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:controllers\\registercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\dnz\\desktop\\berber\\berber\\models\\kullanici.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:models\\kullanici.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\dnz\\desktop\\berber\\berber\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,23 +70,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Kayit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\Views\\Register\\Kayit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Register\\Kayit.cshtml",
-              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\Views\\Register\\Kayit.cshtml",
-              "RelativeToolTip": "Views\\Register\\Kayit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Views\\Islem\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Islem\\Index.cshtml",
+              "ToolTip": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Views\\Islem\\Index.cshtml",
+              "RelativeToolTip": "Views\\Islem\\Index.cshtml",
+              "ViewState": "AgIAADcAAAAAAAAAAAAgwD4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-15T14:03:31.62Z"
+              "WhenOpened": "2024-12-16T17:21:53.022Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Islem.cs",
+              "DocumentMoniker": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Controllers\\Islem.cs",
+              "RelativeDocumentMoniker": "Controllers\\Islem.cs",
+              "ToolTip": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Controllers\\Islem.cs",
+              "RelativeToolTip": "Controllers\\Islem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T17:20:46.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CalisansController.cs",
+              "DocumentMoniker": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Controllers\\CalisansController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CalisansController.cs",
+              "ToolTip": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Controllers\\CalisansController.cs",
+              "RelativeToolTip": "Controllers\\CalisansController.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T16:58:13.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_TestLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Views\\Shared\\_TestLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_TestLayout.cshtml",
+              "ToolTip": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Views\\Shared\\_TestLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_TestLayout.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAD0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-16T16:25:21.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "RegisterController.cs",
-              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\Controllers\\RegisterController.cs",
+              "DocumentMoniker": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Controllers\\RegisterController.cs",
               "RelativeDocumentMoniker": "Controllers\\RegisterController.cs",
-              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\Controllers\\RegisterController.cs",
+              "ToolTip": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Controllers\\RegisterController.cs",
               "RelativeToolTip": "Controllers\\RegisterController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -78,11 +134,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Kullanici.cs",
-              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\Models\\Kullanici.cs",
+              "DocumentMoniker": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Models\\Kullanici.cs",
               "RelativeDocumentMoniker": "Models\\Kullanici.cs",
-              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\Models\\Kullanici.cs",
+              "ToolTip": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Models\\Kullanici.cs",
               "RelativeToolTip": "Models\\Kullanici.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwA0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -90,11 +146,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T12:56:56.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Kayit.cshtml",
+              "DocumentMoniker": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Views\\Register\\Kayit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Register\\Kayit.cshtml",
+              "ToolTip": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Views\\Register\\Kayit.cshtml",
+              "RelativeToolTip": "Views\\Register\\Kayit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-15T14:03:31.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\Views\\Login\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Views\\Login\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Login\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\Views\\Login\\Index.cshtml",
+              "ToolTip": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Views\\Login\\Index.cshtml",
               "RelativeToolTip": "Views\\Login\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -103,11 +184,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -115,27 +196,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\Controllers\\LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\dnz\\Desktop\\berber\\berber\\Controllers\\LoginController.cs",
               "RelativeToolTip": "Controllers\\LoginController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-15T12:57:27.648Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesi\\berber\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-15T12:56:56.619Z"
             }
           ]
         }
