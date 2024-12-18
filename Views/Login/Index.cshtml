@@ -1,7 +1,7 @@
 ﻿@model berber.Models.Kullanici
 <head>
     <meta charset="UTF-8">
-    <title>Modern Login Form | CodingStella </title>
+    <title> Giriş </title>
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap'>
     
@@ -144,10 +144,14 @@
         transition: 0.3s;
     }
 
-        .input-submit:hover {
-            background: var(--second-color);
-        }
+    .input-submit:hover {
+         background: var(--second-color);
+    }
 
+    .text-danger {
+        text-decoration: none;
+        color: red;
+    }
     
 </style>
 
@@ -155,7 +159,7 @@
 <div class="wrapper" >
     <div class="login_box" >
 
-        <form asp-action="Index">
+        <form asp-controller="Login" asp-action="Giris">
 
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 

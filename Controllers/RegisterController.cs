@@ -10,5 +10,11 @@ namespace berber.Controllers
 
 			return View();
 		}
+		public IActionResult KullaniciEkle()
+		{
+
+
+			return View();
+		}
 	}
 }
