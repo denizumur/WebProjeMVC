@@ -1,0 +1,36 @@
+﻿@model berber.Models.Calisan
+
+@{
+    ViewData["Title"] = "Çalışan Güncelle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center mb-4" style="color: #333;">Çalışan Güncelle</h2>
+
+@using (Html.BeginForm("CalisanGuncelle", "Calisan", FormMethod.Post))
+{
+    <div class="container">
+        <!-- Ad Soyad -->
+        <div class="mb-4">
+            @Html.LabelFor(x => x.AdSoyad, new { @class = "form-label" })
+            @Html.TextBoxFor(x => x.AdSoyad, new { @class = "form-control form-control-lg shadow-sm", placeholder = "Çalışanın adını ve soyadını girin" })
+        </div>
+
+        <!-- Uzmanlık Alanları -->
+        <div class="mb-4">
+            @Html.LabelFor(x => x.UzmanlikAlanlari, new { @class = "form-label" })
+            @Html.TextBoxFor(x => x.UzmanlikAlanlari, new { @class = "form-control form-control-lg shadow-sm", placeholder = "Uzmanlık alanlarını girin" })
+        </div>
+
+        <!-- Uygunluk Saatleri -->
+        <div class="mb-4">
+            @Html.LabelFor(x => x.UygunlukSaatleri, new { @class = "form-label" })
+            @Html.TextBoxFor(x => x.UygunlukSaatleri, new { @class = "form-control form-control-lg shadow-sm", placeholder = "Uygunluk saatlerini girin" })
+        </div>
+
+        <!-- Submit Butonu -->
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-custom btn-lg w-50">Değişiklikleri Kaydet</button>
+        </div>
+    </div>
+}

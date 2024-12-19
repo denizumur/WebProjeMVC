@@ -1,8 +1,8 @@
 ﻿@using berber.Models;
-@model List<Islem>
+@model List<Calisan>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Calisanlar";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -11,7 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablo Örneği</title>
+    <title>Çalışanlar Tablosu</title>
 
     <!-- Bootstrap 5 CDN bağlantısı -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -96,35 +96,36 @@
 </head>
 <body>
 
-    <h2>Kuaför/Berber Salonu İşlem Tablosu</h2>
+    <h2>Çalışanlar Tablosu</h2>
 
     <div class="table-container">
         <table class="table table-bordered">
             <thead class="table-light">
                 <tr>
-                    <th>İşlem</th>
-                    <th>Süre</th>
-                    <th>Ücret</th>
+                    <th>Adı Soyadı</th>
+                    <th>Uzmanlık Alanları</th>
+                    <th>Uygunluk Saatleri</th>
                     <th>Detaylar</th>
                     <th>Güncelle</th>
+                    <th>Sil</th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (var x in Model)
                 {
                     <tr>
-                        <td>@x.IslemAdi</td>
-                        <td>@x.Sure</td>
-                        <td>@x.Ucret</td>
-                        
+                        <td>@x.AdSoyad</td>
+                        <td>@x.UzmanlikAlanlari</td>
+                        <td>@x.UygunlukSaatleri</td>
+
                         <td>
                             <a href="#" class="btn-custom">Detaylar</a>
                         </td>
                         <td>
-                            <a href="/Islem/IslemGetir/@x.IslemID" class="btn-custom-success" style="background-color:lawngreen">Güncelle</a>
+                            <a href="/Calisan/CalisanGetir/@x.CalisanID" class="btn-custom-success" style="background-color:lawngreen">Güncelle</a>
                         </td>
                         <td>
-                            <a href="/Islem/IslemSil/@x.IslemID" class="btn-custom" style="background-color:red">SİL</a>
+                            <a href="/Calisan/CalisanSil/@x.CalisanID" class="btn-custom" style="background-color:red">SİL</a>
                         </td>
                     </tr>
                 }
@@ -132,9 +133,9 @@
         </table>
     </div>
 
-    <!-- İşlem Ekle Butonu -->
+    <!-- Çalışan Ekle Butonu -->
     <div class="text-center">
-        <a href="/Islem/YeniIslem" class="btn-primary-custom">İşlem Ekle</a>
+        <a href="/Calisan/YeniCalisan" class="btn-primary-custom">Çalışan Ekle</a>
     </div>
 
     <!-- Bootstrap 5 JS -->

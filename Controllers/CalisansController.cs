@@ -1,156 +1,81 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using berber.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using berber.Models;
+using System.Linq;
 
 namespace berber.Controllers
 {
-    public class CalisansController : Controller
+    public class CalisanController : Controller
     {
-        private readonly Context _context;
+        Context c = new Context();
 
-        public CalisansController(Context context)
+        // Index method to list all employees (Calisans)
+        public IActionResult Index()
         {
-            _context = context;
+            var calisanlar = c.Calisanlar.ToList();
+            return View(calisanlar);
         }
 
-        // GET: Calisans
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Calisanlar.ToListAsync());
-        }
-
-        // GET: Calisans/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var calisan = await _context.Calisanlar
-                .FirstOrDefaultAsync(m => m.CalisanID == id);
-            if (calisan == null)
-            {
-                return NotFound();
-            }
-
-            return View(calisan);
-        }
-
-        // GET: Calisans/Create
-        public IActionResult Create()
+        // GET method to show the form for adding a new employee
+        [HttpGet]
+        public IActionResult YeniCalisan()
         {
             return View();
         }
 
-        // POST: Calisans/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST method to save the new employee data
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CalisanID,AdSoyad,UzmanlikAlanlari,UygunlukSaatleri")] Calisan calisan)
+        public IActionResult YeniCalisan(Calisan calisan)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(calisan);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                c.Calisanlar.Add(calisan);
+                c.SaveChanges();
+                return RedirectToAction("Index");
             }
             return View(calisan);
         }
 
-        // GET: Calisans/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        // Method to delete an employee by their ID
+        public IActionResult CalisanSil(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var calisan = await _context.Calisanlar.FindAsync(id);
-            if (calisan == null)
-            {
-                return NotFound();
-            }
-            return View(calisan);
-        }
-
-        // POST: Calisans/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CalisanID,AdSoyad,UzmanlikAlanlari,UygunlukSaatleri")] Calisan calisan)
-        {
-            if (id != calisan.CalisanID)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(calisan);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!CalisanExists(calisan.CalisanID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(calisan);
-        }
-
-        // GET: Calisans/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var calisan = await _context.Calisanlar
-                .FirstOrDefaultAsync(m => m.CalisanID == id);
-            if (calisan == null)
-            {
-                return NotFound();
-            }
-
-            return View(calisan);
-        }
-
-        // POST: Calisans/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var calisan = await _context.Calisanlar.FindAsync(id);
+            var calisan = c.Calisanlar.Find(id);
             if (calisan != null)
             {
-                _context.Calisanlar.Remove(calisan);
+                c.Calisanlar.Remove(calisan);
+                c.SaveChanges();
             }
-
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index");
         }
 
-        private bool CalisanExists(int id)
+        // Method to get an employee by their ID for editing
+        public IActionResult CalisanGetir(int id)
         {
-            return _context.Calisanlar.Any(e => e.CalisanID == id);
+            var calisan = c.Calisanlar.Find(id);
+            if (calisan == null)
+            {
+                return NotFound();
+            }
+            return View(calisan);
+        }
+
+        // Method to update employee details
+        [HttpPost]
+        public IActionResult CalisanGuncelle(Calisan calisan)
+        {
+            if (ModelState.IsValid)
+            {
+                var existingCalisan = c.Calisanlar.Find(calisan.CalisanID);
+                if (existingCalisan != null)
+                {
+                    existingCalisan.AdSoyad = calisan.AdSoyad;
+                    existingCalisan.UzmanlikAlanlari = calisan.UzmanlikAlanlari;
+                    existingCalisan.UygunlukSaatleri = calisan.UygunlukSaatleri;
+                    c.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+                return NotFound();
+            }
+            return View(calisan);
         }
     }
 }
