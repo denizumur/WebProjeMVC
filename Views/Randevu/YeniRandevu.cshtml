@@ -1,0 +1,57 @@
+﻿@model berber.Models.Randevu
+@{
+    ViewData["Title"] = "Yeni Randevu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Form Başlangıcı -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Yeni Randevu Ekle</h2>
+    <form class="form-group" method="post">
+
+        <!-- Müşteri Adı -->
+        <div class="mb-3">
+            @Html.LabelFor(x => x.MusteriAdi, new { @class = "form-label" })
+            @Html.TextBoxFor(x => x.MusteriAdi, new { @class = "form-control", placeholder = "Müşteri adı girin" })
+        </div>
+
+        <!-- Çalışan Seçimi -->
+        <div class="mb-3">
+            @Html.LabelFor(x => x.CalisanID, new { @class = "form-label" })
+            @Html.DropDownListFor(x => x.CalisanID,
+                     new SelectList(ViewBag.Calisanlar ?? new List<Calisan>(), "CalisanID", "CalisanAdi"),
+                     "Çalışan Seçin", new { @class = "form-control" })
+        </div>
+
+        <!-- İşlem Seçimi -->
+        <div class="mb-3">
+            @Html.LabelFor(x => x.IslemID, new { @class = "form-label" })
+            @Html.DropDownListFor(x => x.IslemID,
+                     new SelectList(ViewBag.Islemler ?? new List<Islem>(), "IslemID", "IslemAdi"),
+                     "İşlem Seçin", new { @class = "form-control" })
+        </div>
+
+        <!-- Randevu Tarihi -->
+        <div class="mb-3">
+            @Html.LabelFor(x => x.Tarih, new { @class = "form-label" })
+            @Html.TextBoxFor(x => x.Tarih, "{0:yyyy-MM-ddTHH:mm}", new { @class = "form-control", type = "datetime-local" })
+        </div>
+
+        <!-- Durum Seçimi -->
+        <div class="mb-3">
+            @Html.LabelFor(x => x.Durum, new { @class = "form-label" })
+            @Html.DropDownListFor(x => x.Durum,
+                     new SelectList(new[] { "Onaylı", "Beklemede", "İptal Edildi" }),
+                     "Durum Seçin", new { @class = "form-control" })
+        </div>
+
+        <!-- Submit Butonu -->
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Randevu Ekle</button>
+        </div>
+    </form>
+</div>
+
+<!-- Bootstrap 5 CDN bağlantıları -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
