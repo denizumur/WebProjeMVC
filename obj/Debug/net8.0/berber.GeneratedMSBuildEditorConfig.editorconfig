@@ -17,123 +17,169 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = berber
 build_property.RootNamespace = berber
-build_property.ProjectDir = C:\Users\dnz\Desktop\web\WebProjeMVC\
+build_property.ProjectDir = C:\Users\Win 10\Desktop\webprojesitaslak\berber\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\dnz\Desktop\web\WebProjeMVC
+build_property.MSBuildProjectDirectory = C:\Users\Win 10\Desktop\webprojesitaslak\berber
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Admin/Index.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/CalisanGoruntuleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FsaXNhbkdvcnVudHVsZW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/CalisanIslemleri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FsaXNhbklzbGVtbGVyaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/HizmetGoruntuleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSGl6bWV0R29ydW50dWxlbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/HizmetIslemleri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSGl6bWV0SXNsZW1sZXJpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Calisan/CalisanGetir.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/KullaniciEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VsbGFuaWNpRWtsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/KullaniciGoruntuleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VsbGFuaWNpR29ydW50dWxlbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/KullaniciIslemleri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VsbGFuaWNpSXNsZW1sZXJpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/RandevuGoruntuleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmFuZGV2dUdvcnVudHVsZW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/RandevuIslemleri.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmFuZGV2dUlzbGVtbGVyaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Calisan/CalisanGetir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhblxDYWxpc2FuR2V0aXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Calisan/CalisanGuncelle.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Calisan/CalisanGuncelle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhblxDYWxpc2FuR3VuY2VsbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Calisan/Create.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Calisan/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhblxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Calisan/Delete.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Calisan/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhblxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Calisan/Details.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Calisan/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhblxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Calisan/Edit.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Calisan/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhblxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Calisan/Index.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Calisan/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Calisan/YeniCalisan.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Calisan/YeniCalisan.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsaXNhblxZZW5pQ2FsaXNhbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Hakkimizda/Index.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Hakkimizda/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFra2ltaXpkYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Home/Index.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Home/Privacy.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Islem/Index.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Islem/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNsZW1cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Islem/IslemGetir.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Islem/IslemGetir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNsZW1cSXNsZW1HZXRpci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Islem/IslemGuncelle.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Islem/IslemGuncelle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNsZW1cSXNsZW1HdW5jZWxsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Islem/YeniIslem.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Islem/YeniIslem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNsZW1cWWVuaUlzbGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Login/Index.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Randevu/Index.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Randevu/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Randevu/RandevuGetir.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Randevu/RandevuGetir.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxSYW5kZXZ1R2V0aXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Randevu/YeniRandevu.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Randevu/YeniRandevu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxZZW5pUmFuZGV2dS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Register/Kayit.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Register/Kayit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcS2F5aXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Register/KullaniciEkle.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Register/KullaniciEkle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcS3VsbGFuaWNpRWtsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Shared/Error.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Shared/_TestLayout.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Shared/_TestLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UZXN0TGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/_ViewImports.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/_ViewStart.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/dnz/Desktop/web/WebProjeMVC/Views/Shared/_Layout.cshtml]
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-czn9z7an2h

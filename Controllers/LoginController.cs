@@ -18,7 +18,11 @@ namespace berber.Controllers
 
 			if ((kullanici.AdSoyad == "melih" || kullanici.AdSoyad =="deniz" ) && kullanici.Sifre == "123") {
 				return View("~/Views/Admin/Index.cshtml");
+
+
 			}
+
+
 
 			return RedirectToAction("Index");
 		}

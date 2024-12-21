@@ -5,7 +5,7 @@ namespace berber.Models
     public class Kullanici
     {
         [Key]
-        public int KullaniciID { get; set; }  // UserID
+        public int? KullaniciID { get; set; }  // UserID
 
 
 		[Required(ErrorMessage = "Lütfen ad alanını doldurunuz.")]
@@ -16,7 +16,7 @@ namespace berber.Models
 
 
 		[Display(Name = "Kullanıcı Üyelik Tarihi")]
-		public DateTime UyelikTarihi { get; set; }  // Tarih
+		public DateTime? UyelikTarihi { get; set; }  // Tarih
 
 
 
@@ -24,7 +24,7 @@ namespace berber.Models
 		[RegularExpression(@"^05\d{2}\d{3}\d{2}\d{2}$", ErrorMessage = "Telefon numaranızı doğru giriniz.")]
 		[Display(Name = "Kullanıcı Telefon Numarası")]
 		public string Telefon { get; set; }  // Telefon
-        public ICollection<Randevu> Randevular { get; set; }
+        public ICollection<Randevu>? Randevular { get; set; }
 
 
 

@@ -1,0 +1,40 @@
+﻿
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+</head>
+<body>
+
+    
+
+    
+    <div class="w3-container-custom">
+        <div class="w3-header-custom">
+            <h1>Berber Projesi Admin Paneli</h1>
+        </div>
+
+        <div >
+
+            <a href="/Login/Index" class="w3-bar-item w3-button">Admin panelinden çıkış</a>
+
+        </div>
+
+        <div class="w3-container">
+            @RenderBody() 
+        </div>
+    </div>
+
+    
+
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -3,8 +3,9 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
+
 <style>
-    
+
 
     .orta {
         font-family: Arial, sans-serif;
@@ -49,24 +50,28 @@
         transition: color 0.3s; /* Renk değişikliği için yumuşak geçiş */
     }
 
-        a.w3-bar-item:hover {
-            background-color: transparent !important; /* Hover sırasında arka plan değişmez */
-            color: black; /* Hover sırasında yazı rengi değişmez */
-        }
+    a.w3-bar-item:hover {
+        background-color: transparent !important; /* Hover sırasında arka plan değişmez */
+        color: black; /* Hover sırasında yazı rengi değişmez */
+    }
+
+
+
+
+
 </style>
 
 
 
 <body class="orta">
     <div class="container">
-        <div class="box"><a href="/Admin/CalisanIslemleri" class="w3-bar-item w3-button">Çalışan İşlemleri</a></div>
-        <div class="box"><a href="/Admin/HizmetIslemleri" class="w3-bar-item w3-button">Hizmet İşlemleri</a></div>
-        <div class="box"><a href="/Admin/RandevuIslemleri" class="w3-bar-item w3-button">Randevu İşlemleri</a></div>
-        <div class="box"><a href="/Admin/KullaniciIslemleri" class="w3-bar-item w3-button">Kayıtlı Kullanıcı İşlemleri</a></div>
+        <div class="box"><a href="/Admin/RandevuGoruntuleme" class="w3-bar-item w3-button">Randevu Görüntüleme</a></div>
+        <div class="box"><a href="/Admin/RandevuEkle" class="w3-bar-item w3-button">Randevu Ekle</a></div>
+        <div class="box"><a href="/Admin/RandevuGuncelle" class="w3-bar-item w3-button">Randevu Güncelle</a></div>
+        <div class="box"><a href="/Admin/RandevuSil" class="w3-bar-item w3-button">Randevu Sil</a></div>
     </div>
 </body>
 
+<br />
 
-
-
-
+<button class="back-button" onclick="history.back()">Geri</button>
