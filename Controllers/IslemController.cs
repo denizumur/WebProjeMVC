@@ -1,5 +1,6 @@
 ﻿using berber.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 namespace berber.Controllers
 {
     public class IslemController : Controller
@@ -40,14 +41,34 @@ namespace berber.Controllers
             var islem = c.Islemler.Find(id);
             return View("IslemGetir", islem);
         }
+        [HttpGet]
+        public IActionResult IslemGuncelle(int id)
+        {
+            var islem = c.Islemler.Find(id);
+            if (islem == null)
+            {
+                return RedirectToAction("Index");
+            }
+            return View(islem);
+        }
+
+        [HttpPost]
         public IActionResult IslemGuncelle(Islem i)
         {
             var islem = c.Islemler.Find(i.IslemID);
-            islem.Ucret = i.Ucret;
-            islem.IslemAdi = i.IslemAdi;
-            islem.Sure = i.Sure;
-            c.SaveChanges();
-            return View("Index");
+            if (islem != null)
+            {
+                islem.Ucret = i.Ucret;
+                islem.IslemAdi = i.IslemAdi;
+                islem.Sure = i.Sure;
+
+                c.Entry(islem).State = EntityState.Modified;
+                c.Update(islem);
+                c.SaveChanges();
+            }
+            return RedirectToAction("Index");
         }
+
+
     }
 }

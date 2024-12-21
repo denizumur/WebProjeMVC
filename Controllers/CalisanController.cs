@@ -1,5 +1,6 @@
 ﻿using berber.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
 namespace berber.Controllers
@@ -26,13 +27,12 @@ namespace berber.Controllers
         [HttpPost]
         public IActionResult YeniCalisan(Calisan calisan)
         {
-            if (ModelState.IsValid)
-            {
+          
                 c.Calisanlar.Add(calisan);
                 c.SaveChanges();
                 return RedirectToAction("Index");
-            }
-            return View(calisan);
+            
+            
         }
 
         // Method to delete an employee by their ID
@@ -43,6 +43,7 @@ namespace berber.Controllers
             {
                 c.Calisanlar.Remove(calisan);
                 c.SaveChanges();
+                return RedirectToAction("Index");
             }
             return RedirectToAction("Index");
         }
@@ -60,22 +61,21 @@ namespace berber.Controllers
 
         // Method to update employee details
         [HttpPost]
-        public IActionResult CalisanGuncelle(Calisan calisan)
+        public IActionResult CalisanGuncelle(Calisan cal)
         {
-            if (ModelState.IsValid)
+            var calisan = c.Calisanlar.Find(cal.CalisanID);
+            if (calisan != null)
             {
-                var existingCalisan = c.Calisanlar.Find(calisan.CalisanID);
-                if (existingCalisan != null)
-                {
-                    existingCalisan.AdSoyad = calisan.AdSoyad;
-                    existingCalisan.UzmanlikAlanlari = calisan.UzmanlikAlanlari;
-                    existingCalisan.UygunlukSaatleri = calisan.UygunlukSaatleri;
-                    c.SaveChanges();
-                    return RedirectToAction("Index");
-                }
-                return NotFound();
+                calisan.AdSoyad = cal.AdSoyad;
+                calisan.UygunlukSaatleri = cal.UygunlukSaatleri;
+                calisan.UzmanlikAlanlari = cal.UzmanlikAlanlari;
+
+                c.Entry(calisan).State = EntityState.Modified;
+                c.Update(calisan);
+                c.SaveChanges();
             }
-            return View(calisan);
+            return RedirectToAction("Index");
         }
+
     }
 }

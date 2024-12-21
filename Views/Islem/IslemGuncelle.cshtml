@@ -1,0 +1,25 @@
+﻿@model berber.Models.Islem
+@{
+    ViewData["Title"] = "IslemGuncelle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<form asp-action="IslemGuncelle" method="post">
+    <input type="hidden" asp-for="IslemID" />
+    <div>
+        <label>İşlem Adı</label>
+        <input asp-for="IslemAdi" />
+    </div>
+    <div>
+        <label>Ücret</label>
+        <input asp-for="Ucret" />
+    </div>
+    <div>
+        <label>Süre</label>
+        <input asp-for="Sure" />
+    </div>
+    <button type="submit">Güncelle</button>
+</form>
+

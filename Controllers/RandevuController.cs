@@ -1,12 +1,26 @@
 ﻿using berber.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Linq;
 
 namespace berber.Controllers
 {
     public class RandevuController : Controller
     {
-        private readonly Context c = new Context();
+        Context c = new Context();
+
+        // Randevu Listesi
+        public IActionResult Index()
+        {
+            // Randevular, Islem, Kullanici ve Calisan verilerini dahil ediyoruz
+            var randevular = c.Randevular
+                .Include(x => x.Islem)          // Islem ilişkisini dahil et
+                                                // Kullanici ilişkisini dahil et
+                .Include(x => x.Calisan)        // Calisan ilişkisini dahil et
+                .ToList();                      // Veritabanındaki tüm randevuları alıyoruz
+
+            return View(randevular);            // View'a gönderiyoruz
+        }
 
         // Yeni Randevu Sayfası
         [HttpGet]
@@ -39,12 +53,6 @@ namespace berber.Controllers
             return View(randevu);
         }
 
-        // Randevu Listesi
-        public IActionResult Index()
-        {
-            var randevular = c.Randevular.ToList(); // Veritabanındaki tüm randevuları alıyoruz
-            return View(randevular); // View'a gönderiyoruz
-        }
 
         // Randevu Detayı Görüntüleme
         public IActionResult RandevuGetir(int id)

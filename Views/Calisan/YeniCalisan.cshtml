@@ -1,13 +1,17 @@
 ﻿@model berber.Models.Calisan
 @{
-    ViewData["Title"] = "Yeni Çalışan Ekle";
+    ViewData["Title"] = "Çalışan Güncelle";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!-- Form Başlangıcı -->
 <div class="container mt-5">
-    <h2 class="text-center mb-4 text-primary">Yeni Çalışan Ekle</h2>
+    <h2 class="text-center mb-4 text-primary">Çalışan Bilgilerini Güncelle</h2>
+
     <form class="form-group" method="post">
+
+        <!-- Hidden Field for CalisanID (ID alanı değiştirilemez) -->
+        <input type="hidden" asp-for="CalisanID" />
 
         <div class="row">
             <!-- Adı Soyadı -->
@@ -31,7 +35,7 @@
 
         <!-- Submit Butonu -->
         <div class="text-center mt-4">
-            <button type="submit" class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow-sm">Kaydet</button>
+            <button type="submit" class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow-sm">Güncelle</button>
         </div>
     </form>
 </div>
