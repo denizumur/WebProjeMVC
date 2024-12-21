@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null; // Eğer bu layout'u kullanıyorsanız, controller'dan Layout'ı burada belirlemeye gerek yok
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+</head>
+<body>
+
+
+    <!-- Page Content -->
+    <div class="w3-container-custom">
+        <div class="w3-header-custom">
+            <h4>Berber Projesi</h4>
+        </div>
+
+        <!-- Dynamic Content -->
+        <div class="w3-container">
+            @RenderBody() <!-- Sayfa içeriği burada dinamik olarak render edilecek -->
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

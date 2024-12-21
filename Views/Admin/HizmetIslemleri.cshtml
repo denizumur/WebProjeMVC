@@ -2,9 +2,8 @@
     ViewData["Title"] = "Admin Paneli";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
 <style>
-    
+
 
     .orta {
         font-family: Arial, sans-serif;
@@ -59,14 +58,15 @@
 
 <body class="orta">
     <div class="container">
-        <div class="box"><a href="/Admin/CalisanIslemleri" class="w3-bar-item w3-button">Çalışan İşlemleri</a></div>
-        <div class="box"><a href="/Admin/HizmetIslemleri" class="w3-bar-item w3-button">Hizmet İşlemleri</a></div>
-        <div class="box"><a href="/Admin/RandevuIslemleri" class="w3-bar-item w3-button">Randevu İşlemleri</a></div>
-        <div class="box"><a href="/Admin/KullaniciIslemleri" class="w3-bar-item w3-button">Kayıtlı Kullanıcı İşlemleri</a></div>
+        <div class="box"><a href="/Admin/HizmetGoruntuleme" class="w3-bar-item w3-button">Hizmet Görüntüleme</a></div>
+        <div class="box"><a href="/Admin/HizmetEkle" class="w3-bar-item w3-button">Hizmet Ekle</a></div>
+        <div class="box"><a href="/Admin/HizmetGuncelle" class="w3-bar-item w3-button">Hizmet Güncelle</a></div>
+        <div class="box"><a href="/Admin/HizmetSil" class="w3-bar-item w3-button">Hizmet Sil</a></div>
     </div>
 </body>
 
+<br />
 
 
-
+<button class="back-button" onclick="history.back()">Geri</button>
 
