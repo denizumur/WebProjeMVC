@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("berber")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32ae35a7b934aaefe1f14b4bb12dbdd736a0085a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9375c7e566a9d567c36b0092b23c579ebc102e23")]
 [assembly: System.Reflection.AssemblyProductAttribute("berber")]
 [assembly: System.Reflection.AssemblyTitleAttribute("berber")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

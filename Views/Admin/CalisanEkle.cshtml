@@ -1,6 +1,6 @@
-﻿@model berber.Models.Kullanici
+﻿@model berber.Models.Calisan
 @{
-    ViewData["Title"] = "Yeni Kullanıcı";
+    ViewData["Title"] = "Yeni Çalışan";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
@@ -10,11 +10,11 @@
 }
 
 
-<form asp-controller="Admin" asp-action="KullaniciEkle">
+<form asp-controller="Admin" asp-action="CalisanEkle">
 
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
- 
+
     <div class="input_box">
         <label asp-for="AdSoyad" class="control-label"></label>
         <input asp-for="AdSoyad" class="form-control" autocomplete="off" />
@@ -22,19 +22,19 @@
     </div>
 
     <div class="input_box">
-        <label asp-for="Telefon" class="control-label"></label>
-        <input asp-for="Telefon" class="form-control" autocomplete="off" />
-        <span asp-validation-for="Telefon" class="text-danger"></span>
+        <label asp-for="UzmanlikAlanlari" class="control-label"></label>
+        <input asp-for="UzmanlikAlanlari" class="form-control" autocomplete="off" />
+        <span asp-validation-for="UzmanlikAlanlari" class="text-danger"></span>
     </div>
 
     <div class="input_box">
-        <label asp-for="Sifre" class="control-label"></label>
-        <input asp-for="Sifre" type="password" class="form-control" />
-        <span asp-validation-for="Sifre" class="text-danger"></span>
+        <label asp-for="UygunlukSaatleri" class="control-label"></label>
+        <input asp-for="UygunlukSaatleri" class="form-control" />
+        <span asp-validation-for="UygunlukSaatleri" class="text-danger"></span>
     </div>
 
     <div class="input_box">
-        <input type="submit" value="Kullanıcı Ekle" class="input-submit" />
+        <input type="submit" value="Çalışan Ekle" class="input-submit" />
     </div>
 
 </form>

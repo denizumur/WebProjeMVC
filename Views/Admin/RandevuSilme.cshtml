@@ -5,6 +5,11 @@
     ViewData["Title"] = "Admin Paneli";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+@if (TempData["BasariMesaji"] != null)
+{
+    <div class="alert alert-danger">@TempData["BasariMesaji"]</div>
+}
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
 
 
@@ -12,24 +17,27 @@
     <table class="table table-bordered">
         <thead class="table-light">
             <tr>
-                <th>Randevu Tarihi</th>
+                <th>Randevu </th>
                 <th>Müşteri Adı</th>
                 <th>Çalışan</th>
                 <th>İşlem</th>
                 <th>Durum</th>
-                
+                <th>Sil</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var randevu in Model)
+            @foreach (var x in Model)
             {
                 <tr>
-                    <td>@randevu.Tarih.ToString("dd/MM/yyyy HH:mm")</td>
-                    <td>@randevu.MusteriAdi</td>
-                    <td>@randevu.Calisan.AdSoyad</td>
-                    <td>@randevu.Islem.IslemAdi</td>
-                    <td>@randevu.Durum</td>
-                    
+                    <td>@x.Tarih</td>
+                    <td>@x.MusteriAdi</td>
+                    <td>@x.Calisan.AdSoyad</td>
+                    <td>@x.Islem.IslemAdi</td>
+                    <td>@x.Durum</td>
+                    <td>
+                        <a href="/Admin/RandevuSil/@x.RandevuID" class="btn-custom" style="background-color:red">SİL</a>
+                    </td>
+
                 </tr>
             }
         </tbody>

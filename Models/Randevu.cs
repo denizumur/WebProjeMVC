@@ -13,8 +13,11 @@ namespace berber.Models
         public string Durum { get; set; }  // Durum (Onaylı, Beklemede vs.)
 
         // İlişkiler
-        public Calisan Calisan { get; set; }  // Çalışan
-        public Islem Islem { get; set; }  // İşlem
-    }
+        public Calisan? Calisan { get; set; }  // Çalışan
+        public Islem? Islem { get; set; }  // İşlem
+		public Kullanici? Kullanici { get; set; }  // İşlem
+		public int? KullaniciID { get; set; }  // ServiceID (FK)
+
+	}
 
 }

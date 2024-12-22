@@ -14,10 +14,10 @@
     <table class="table table-bordered">
         <thead class="table-light">
             <tr>
-                <th>İşlem</th>
-                <th>Süre</th>
-                <th>Ücret</th>
-                
+                <th>Çalışan</th>
+                <th>Uygunluk Saati</th>
+                <th>Uzmanlık Alanları</th>
+                <th>Güncelle</th>
             </tr>
         </thead>
         <tbody>
@@ -28,7 +28,10 @@
                     <td>@x.UygunlukSaatleri</td>
                     <td>@x.UzmanlikAlanlari</td>
 
-                    
+                    <td>
+                        <a href="/Admin/CalisanGuncelle/@x.CalisanID" class="btn-custom-success" style="background-color:lawngreen">Güncelle</a>
+                    </td>
+
                 </tr>
             }
         </tbody>

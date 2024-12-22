@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Yeni Çalışan";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model berber.Models.Randevu
+@{
+    ViewBag.Title = "Randevu Ekle";
+    var calisanlar = ViewBag.Calisanlar as List<Calisan>;
+    var islemler = ViewBag.Islemler as List<Islem>;
+}
+@if (TempData["HataMesaji"] != null)
+{
+    <div class="alert alert-danger">@TempData["HataMesaji"]</div>
+}
+
+
+<form method="post" asp-action="RandevuEkle">
+
+    <label asp-for="CalisanID">Çalışan:</label>
+    <select asp-for="CalisanID" id="CalisanID" name="CalisanID">
+        @foreach (var calisan in calisanlar)
+        {
+            <option value="@calisan.CalisanID">@calisan.AdSoyad</option>
+        }
+    </select>
+
+    <label asp-for="IslemID">İşlem:</label>
+    <select asp-for="IslemID"  id="IslemID" name="IslemID">
+        @foreach (var islem in islemler)
+        {
+            <option value="@islem.IslemID">@islem.IslemAdi</option>
+        }
+    </select>
+
+    <label asp-for="MusteriAdi" class="control-label"></label>
+    <input asp-for="MusteriAdi" class="form-control" autocomplete="off" />
+    <span asp-validation-for="MusteriAdi" class="text-danger"></span>
+
+    <label asp-for="Tarih" class="control-label"></label>
+    <input asp-for="Tarih" class="form-control" autocomplete="off" />
+    <span asp-validation-for="Tarih" class="text-danger"></span>
+
+    <label asp-for="Durum" class="control-label"></label>
+    <input asp-for="Durum" class="form-control" autocomplete="off" />
+    <span asp-validation-for="Durum" class="text-danger"></span>
+
+    <div class="input_box">
+        <input type="submit" value="Randevu Ekle" class="input-submit" />
+    </div>
+</form>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -28,20 +28,60 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/CalisanEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FsaXNhbkVrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/CalisanGoruntuleme.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FsaXNhbkdvcnVudHVsZW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/CalisanGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FsaXNhbkd1bmNlbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/CalisanGuncelleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FsaXNhbkd1bmNlbGxlbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/CalisanIslemleri.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FsaXNhbklzbGVtbGVyaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/CalisanSil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FsaXNhblNpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/CalisanSilme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2FsaXNhblNpbG1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/HizmetEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSGl6bWV0RWtsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/HizmetGoruntuleme.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSGl6bWV0R29ydW50dWxlbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/HizmetGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSGl6bWV0R3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/HizmetGuncelleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSGl6bWV0R3VuY2VsbGVtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/HizmetIslemleri.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSGl6bWV0SXNsZW1sZXJpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/HizmetSil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSGl6bWV0U2lsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/HizmetSilme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSGl6bWV0U2lsbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/Index.cshtml]
@@ -56,8 +96,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VsbGFuaWNpR29ydW50dWxlbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/KullaniciGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VsbGFuaWNpR3VuY2VsbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/KullaniciGuncelleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VsbGFuaWNpR3VuY2VsbGVtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/KullaniciIslemleri.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VsbGFuaWNpSXNsZW1sZXJpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/KullaniciSil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VsbGFuaWNpU2lsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/KullaniciSilme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VsbGFuaWNpU2lsbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/RandevuEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmFuZGV2dUVrbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/RandevuGoruntuleme.cshtml]
@@ -66,6 +126,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/RandevuIslemleri.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmFuZGV2dUlzbGVtbGVyaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/RandevuSil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmFuZGV2dVNpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/RandevuSilme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmFuZGV2dVNpbG1lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Calisan/CalisanGetir.cshtml]
@@ -126,6 +194,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Islem/YeniIslem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXNsZW1cWWVuaUlzbGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Login/Anasayfa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQW5hc2F5ZmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Login/Index.cshtml]

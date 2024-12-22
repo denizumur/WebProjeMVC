@@ -1,0 +1,36 @@
+﻿@model berber.Models.Calisan
+@{
+    ViewData["Title"] = "Admin Paneli";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<form asp-action="CalisanGuncelle">
+    <input type="hidden" asp-for="CalisanID" />
+    <div>
+        <label asp-for="AdSoyad" class="control-label" >İşlem Adı</label>
+        <input asp-for="AdSoyad" class="form-control" />
+        <span asp-validation-for="AdSoyad" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="UzmanlikAlanlari" class="control-label" >Ücret</label>
+        <input asp-for="UzmanlikAlanlari" class="form-control" />
+        <span asp-validation-for="UzmanlikAlanlari" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="UygunlukSaatleri" class="control-label" >Süre</label>
+        <input asp-for="UygunlukSaatleri" class="form-control" />
+        <span asp-validation-for="UygunlukSaatleri" class="text-danger"></span>
+    </div>
+    <button type="submit">Güncelle</button>
+</form>
+
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+

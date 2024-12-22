@@ -1,5 +1,5 @@
 ﻿@using berber.Models;
-@model List<Calisan>
+@model List<Kullanici>
 
 @{
     ViewData["Title"] = "Admin Paneli";
@@ -14,10 +14,10 @@
     <table class="table table-bordered">
         <thead class="table-light">
             <tr>
-                <th>İşlem</th>
-                <th>Süre</th>
-                <th>Ücret</th>
-                
+                <th>Kullanıcı</th>
+                <th>Sifre</th>
+                <th>Telefon</th>
+                <th>Güncelle</th>
             </tr>
         </thead>
         <tbody>
@@ -25,10 +25,13 @@
             {
                 <tr>
                     <td>@x.AdSoyad</td>
-                    <td>@x.UygunlukSaatleri</td>
-                    <td>@x.UzmanlikAlanlari</td>
+                    <td>@x.Sifre</td>
+                    <td>@x.Telefon</td>
 
-                    
+                    <td>
+                        <a href="/Admin/KullaniciGuncelle/@x.KullaniciID" class="btn-custom-success" style="background-color:lawngreen">Güncelle</a>
+                    </td>
+
                 </tr>
             }
         </tbody>
