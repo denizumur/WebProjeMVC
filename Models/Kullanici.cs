@@ -24,9 +24,9 @@ namespace berber.Models
 		[RegularExpression(@"^05\d{2}\d{3}\d{2}\d{2}$", ErrorMessage = "Telefon numaranızı doğru giriniz.")]
 		[Display(Name = "Kullanıcı Telefon Numarası")]
 		public string Telefon { get; set; }  // Telefon
+
+
         public ICollection<Randevu>? Randevular { get; set; }
-
-
 
 
         [Required(ErrorMessage="Lütfen şifre alanını doldurunuz.")]

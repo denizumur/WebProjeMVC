@@ -1,11 +1,14 @@
 ﻿@using berber.Models;
-@model List<Calisan>
+@model List<Islem>
 
 @{
     ViewData["Title"] = "Admin Paneli";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
+@if (TempData["BasariMesaji"] != null)
+{
+    <div class="alert alert-danger">@TempData["BasariMesaji"]</div>
+}
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
 
@@ -17,18 +20,21 @@
                 <th>İşlem</th>
                 <th>Süre</th>
                 <th>Ücret</th>
-                
+                <th>Güncelle</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var x in Model)
             {
                 <tr>
-                    <td>@x.AdSoyad</td>
-                    <td>@x.UygunlukSaatleri</td>
-                    <td>@x.UzmanlikAlanlari</td>
+                    <td>@x.IslemAdi</td>
+                    <td>@x.Sure</td>
+                    <td>@x.Ucret</td>
 
-                    
+                    <td>
+                        <a href="/Admin/HizmetGuncelle/@x.IslemID" class="btn-custom-success" style="background-color:lawngreen">Güncelle</a>
+                    </td>
+
                 </tr>
             }
         </tbody>

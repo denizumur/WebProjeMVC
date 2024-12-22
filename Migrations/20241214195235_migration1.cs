@@ -65,7 +65,8 @@ namespace berber.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CalisanID = table.Column<int>(type: "int", nullable: false),
                     IslemID = table.Column<int>(type: "int", nullable: false),
-                    MusteriAdi = table.Column<string>(type: "nvarchar(max)", nullable: false),
+					
+					MusteriAdi = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Tarih = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Durum = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
@@ -78,7 +79,8 @@ namespace berber.Migrations
                         principalTable: "Calisanlar",
                         principalColumn: "CalisanID",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
+					
+					table.ForeignKey(
                         name: "FK_Randevular_Islemler_IslemID",
                         column: x => x.IslemID,
                         principalTable: "Islemler",
@@ -91,7 +93,9 @@ namespace berber.Migrations
                 table: "Randevular",
                 column: "CalisanID");
 
-            migrationBuilder.CreateIndex(
+			
+
+			migrationBuilder.CreateIndex(
                 name: "IX_Randevular_IslemID",
                 table: "Randevular",
                 column: "IslemID");
