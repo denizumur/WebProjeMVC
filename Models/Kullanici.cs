@@ -33,7 +33,7 @@ namespace berber.Models
 		[Display(Name = "Kullanıcı Şifresi")]
 		public string Sifre { get; set; }  // Sifre
 
-        // İlişkiler
+        
        
     }
 

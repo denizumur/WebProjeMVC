@@ -12,11 +12,12 @@
 @using (Html.BeginForm("RandevuGuncelle", "Randevu", FormMethod.Post))
 {
     <div class="container">
-        <!-- Müşteri Adı -->
+        <!-- Müşteri Adı 
         <div class="mb-4">
-            @Html.LabelFor(x => x.MusteriAdi, new { @class = "form-label" })
-            @Html.TextBoxFor(x => x.MusteriAdi, new { @class = "form-control form-control-lg shadow-sm", placeholder = "Müşteri adı girin" })
+            Html.LabelFor(x => x.MusteriAdi, new { class = "form-label" })
+           Html.TextBoxFor(x => x.MusteriAdi, new { class = "form-control form-control-lg shadow-sm", placeholder = "Müşteri adı girin" })
         </div>
+        -->
 
         <!-- Çalışan Seçimi -->
         <div class="mb-4">
@@ -24,12 +25,12 @@
             @Html.DropDownListFor(x => x.CalisanID, new SelectList(ViewBag.Calisanlar, "CalisanID", "CalisanAdi"), "Çalışan Seçin", new { @class = "form-control form-control-lg shadow-sm" })
         </div>
 
-        <!-- İşlem Seçimi -->
+        <!-- İşlem Seçimi 
         <div class="mb-4">
-            @Html.LabelFor(x => x.IslemID, new { @class = "form-label" })
-            @Html.DropDownListFor(x => x.IslemID, new SelectList(ViewBag.Islemler, "IslemID", "IslemAdi"), "İşlem Seçin", new { @class = "form-control form-control-lg shadow-sm" })
+           Html.LabelFor(x => x.IslemID, new { class = "form-label" })
+            Html.DropDownListFor(x => x.IslemID, new SelectList(ViewBag.Islemler, "IslemID", "IslemAdi"), "İşlem Seçin", new { class = "form-control form-control-lg shadow-sm" })
         </div>
-
+        -->
         <!-- Randevu Tarihi -->
         <div class="mb-4">
             @Html.LabelFor(x => x.Tarih, new { @class = "form-label" })

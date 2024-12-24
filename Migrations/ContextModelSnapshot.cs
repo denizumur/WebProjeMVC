@@ -47,6 +47,29 @@ namespace berber.Migrations
                     b.ToTable("Calisanlar");
                 });
 
+            modelBuilder.Entity("berber.Models.CalisanIslem", b =>
+                {
+                    b.Property<int>("CalisanIslemID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CalisanIslemID"));
+
+                    b.Property<int>("CalisanID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IslemID")
+                        .HasColumnType("int");
+
+                    b.HasKey("CalisanIslemID");
+
+                    b.HasIndex("CalisanID");
+
+                    b.HasIndex("IslemID");
+
+                    b.ToTable("CalisanIslemler");
+                });
+
             modelBuilder.Entity("berber.Models.Islem", b =>
                 {
                     b.Property<int>("IslemID")
@@ -62,8 +85,8 @@ namespace berber.Migrations
                     b.Property<int>("Sure")
                         .HasColumnType("int");
 
-                    b.Property<decimal>("Ucret")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("Ucret")
+                        .HasColumnType("int");
 
                     b.HasKey("IslemID");
 
@@ -106,22 +129,14 @@ namespace berber.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RandevuID"));
 
-                    b.Property<int>("CalisanID")
+                    b.Property<int?>("CalisanID")
                         .HasColumnType("int");
 
-                    b.Property<string>("Durum")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("IslemID")
-                        .HasColumnType("int");
+                    b.Property<bool?>("Durum")
+                        .HasColumnType("bit");
 
                     b.Property<int?>("KullaniciID")
                         .HasColumnType("int");
-
-                    b.Property<string>("MusteriAdi")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("Tarih")
                         .HasColumnType("datetime2");
@@ -130,11 +145,51 @@ namespace berber.Migrations
 
                     b.HasIndex("CalisanID");
 
-                    b.HasIndex("IslemID");
-
                     b.HasIndex("KullaniciID");
 
                     b.ToTable("Randevular");
+                });
+
+            modelBuilder.Entity("berber.Models.RandevuIslem", b =>
+                {
+                    b.Property<int>("RandevuIslemID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RandevuIslemID"));
+
+                    b.Property<int>("IslemID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RandevuID")
+                        .HasColumnType("int");
+
+                    b.HasKey("RandevuIslemID");
+
+                    b.HasIndex("IslemID");
+
+                    b.HasIndex("RandevuID");
+
+                    b.ToTable("RandevuIslemler");
+                });
+
+            modelBuilder.Entity("berber.Models.CalisanIslem", b =>
+                {
+                    b.HasOne("berber.Models.Calisan", "Calisan")
+                        .WithMany("CalisanIslemler")
+                        .HasForeignKey("CalisanID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("berber.Models.Islem", "Islem")
+                        .WithMany("CalisanIslemler")
+                        .HasForeignKey("IslemID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Calisan");
+
+                    b.Navigation("Islem");
                 });
 
             modelBuilder.Entity("berber.Models.Randevu", b =>
@@ -142,34 +197,59 @@ namespace berber.Migrations
                     b.HasOne("berber.Models.Calisan", "Calisan")
                         .WithMany("Randevular")
                         .HasForeignKey("CalisanID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("berber.Models.Islem", "Islem")
-                        .WithMany()
-                        .HasForeignKey("IslemID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("berber.Models.Kullanici", "Kullanici")
                         .WithMany("Randevular")
-                        .HasForeignKey("KullaniciID");
+                        .HasForeignKey("KullaniciID")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Calisan");
-
-                    b.Navigation("Islem");
 
                     b.Navigation("Kullanici");
                 });
 
+            modelBuilder.Entity("berber.Models.RandevuIslem", b =>
+                {
+                    b.HasOne("berber.Models.Islem", "Islem")
+                        .WithMany("RandevuIslemler")
+                        .HasForeignKey("IslemID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("berber.Models.Randevu", "Randevu")
+                        .WithMany("RandevuIslemler")
+                        .HasForeignKey("RandevuID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Islem");
+
+                    b.Navigation("Randevu");
+                });
+
             modelBuilder.Entity("berber.Models.Calisan", b =>
                 {
+                    b.Navigation("CalisanIslemler");
+
                     b.Navigation("Randevular");
+                });
+
+            modelBuilder.Entity("berber.Models.Islem", b =>
+                {
+                    b.Navigation("CalisanIslemler");
+
+                    b.Navigation("RandevuIslemler");
                 });
 
             modelBuilder.Entity("berber.Models.Kullanici", b =>
                 {
                     b.Navigation("Randevular");
+                });
+
+            modelBuilder.Entity("berber.Models.Randevu", b =>
+                {
+                    b.Navigation("RandevuIslemler");
                 });
 #pragma warning restore 612, 618
         }

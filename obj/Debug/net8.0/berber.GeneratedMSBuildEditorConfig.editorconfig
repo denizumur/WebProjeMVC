@@ -116,12 +116,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cS3VsbGFuaWNpU2lsbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/LogOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9nT3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/RandevuEkle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmFuZGV2dUVrbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/RandevuGoruntuleme.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmFuZGV2dUdvcnVudHVsZW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/RandevuGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmFuZGV2dUd1bmNlbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/RandevuGuncelleme.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmFuZGV2dUd1bmNlbGxlbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Admin/RandevuIslemleri.cshtml]
@@ -202,6 +214,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Login/LogOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9nT3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Login/RandevuEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmFuZGV2dUVrbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Login/Randevularim.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmFuZGV2dWxhcmltLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Login/RandevuYeni.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmFuZGV2dVllbmkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Win 10/Desktop/webprojesitaslak/berber/Views/Randevu/Index.cshtml]

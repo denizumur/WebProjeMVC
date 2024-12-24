@@ -1,10 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-
-@{
-    Layout = null; // Eğer bu layout'u kullanıyorsanız, controller'dan Layout'ı burada belirlemeye gerek yok
-}
+﻿
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -61,29 +55,31 @@
 </head>
 <body>
 
-    <!-- Sidebar -->
+    
     <div class="w3-sidebar w3-sidebar-custom">
         <h3 class="w3-bar-item">Menüler</h3>
-        <a href="/Islem/Index" class="w3-bar-item w3-button">İşlemler</a>
-        <a href="/Calisan/Index" class="w3-bar-item w3-button">Çalışanlar</a>
-        <a href="/Randevu/Index/" class="w3-bar-item w3-button">Randevu Al</a>
-        <a href="/Hakkimizda/Index" class="w3-bar-item w3-button">Hakkımızda</a>
-        <a href="#" class="w3-bar-item w3-button">Çıkış</a>
+
+        
+        <a href="/Login/RandevuEkle" class="w3-bar-item w3-button">Randevu Ekle</a>
+        <a href="/Login/Randevularim" class="w3-bar-item w3-button">Randevularım</a>
+        
+
+        <a href="/Login/LogOut" class="w3-bar-item w3-button">Çıkış</a>
     </div>
 
-    <!-- Page Content -->
+   
     <div class="w3-container-custom">
         <div class="w3-header-custom">
             <h1>Berber</h1>
         </div>
 
-        <!-- Dynamic Content -->
+        
         <div class="w3-container">
-            @RenderBody() <!-- Sayfa içeriği burada dinamik olarak render edilecek -->
+            @RenderBody() 
         </div>
     </div>
 
-    <!-- JavaScript -->
+    
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
