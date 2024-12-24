@@ -9,11 +9,16 @@ namespace berber.Models
         [Required(ErrorMessage = "Ad ve Soyad gereklidir.")]
         public string AdSoyad { get; set; }
 
-        [Required(ErrorMessage = "Uzmanlık Alanları gereklidir.")]
-        public string UzmanlikAlanlari { get; set; }
+		[Required(ErrorMessage = "Uzmanlık alanları gereklidir.")]
+		public string UzmanlikAlanlari { get; set; }
 
-        [Required(ErrorMessage = "Uygunluk Saatleri gereklidir.")]
-        public required string UygunlukSaatleri { get; set; }
-        public ICollection<Randevu> Randevular { get; set; }
-    }
+		[Required(ErrorMessage = "Uygunluk Saatleri gereklidir.")]
+        public string UygunlukSaatleri { get; set; }
+
+
+        public ICollection<Randevu>? Randevular { get; set; }
+
+		public ICollection<CalisanIslem>? CalisanIslemler { get; set; }
+	}
+
 }

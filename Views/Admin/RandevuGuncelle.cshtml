@@ -1,0 +1,63 @@
+﻿@model berber.Models.Randevu
+
+@{
+    ViewData["Title"] = "Randevu Güncelle";
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+<h1>Randevu Güncelle</h1>
+
+@if (TempData["HataMesaji"] != null)
+{
+    <div class="alert alert-danger">@TempData["HataMesaji"]</div>
+}
+
+@if (TempData["BasariMesaji"] != null)
+{
+    <div class="alert alert-success">@TempData["BasariMesaji"]</div>
+}
+
+<form asp-controller="Admin" asp-action="RandevuGuncelle" method="post">
+    <input type="hidden" asp-for="RandevuID" />
+
+    <div class="form-group">
+        <label>Randevu Tarihi</label>
+        <input asp-for="Tarih" class="form-control" type="datetime-local" />
+        <span asp-validation-for="Tarih" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Kullanıcı</label>
+        <select asp-for="KullaniciID" class="form-control">
+            <option value="">Kullanıcı Seçin</option>
+            @foreach (var kullanici in ViewBag.Kullanicilar)
+            {
+                <option value="@kullanici.KullaniciID">@kullanici.AdSoyad</option>
+            }
+        </select>
+        <span asp-validation-for="KullaniciID" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Çalışan</label>
+        <select asp-for="CalisanID" class="form-control">
+            <option value="">Çalışan Seçin</option>
+            @foreach (var calisan in ViewBag.Calisanlar)
+            {
+                <option value="@calisan.CalisanID">@calisan.AdSoyad</option>
+            }
+        </select>
+        <span asp-validation-for="CalisanID" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Durum</label>
+        <input type="text" class="form-control" value="Onaylandı" readonly />
+        <input type="hidden" asp-for="Durum" value="true" />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Güncelle" class="btn btn-primary" />
+    </div>
+</form>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

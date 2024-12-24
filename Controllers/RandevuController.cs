@@ -14,7 +14,7 @@ namespace berber.Controllers
         {
             // Randevular, Islem, Kullanici ve Calisan verilerini dahil ediyoruz
             var randevular = c.Randevular
-                .Include(x => x.Islem)          // Islem ilişkisini dahil et
+                //.Include(x => x.Islem)          // Islem ilişkisini dahil et
                                                 // Kullanici ilişkisini dahil et
                 .Include(x => x.Calisan)        // Calisan ilişkisini dahil et
                 .ToList();                      // Veritabanındaki tüm randevuları alıyoruz
@@ -88,9 +88,9 @@ namespace berber.Controllers
                 var existingRandevu = c.Randevular.Find(randevu.RandevuID);
                 if (existingRandevu != null)
                 {
-                    existingRandevu.MusteriAdi = randevu.MusteriAdi;
-                    existingRandevu.CalisanID = randevu.CalisanID;
-                    existingRandevu.IslemID = randevu.IslemID;
+                    //existingRandevu.MusteriAdi = randevu.MusteriAdi;
+                    //existingRandevu.CalisanID = randevu.CalisanID;
+                    //existingRandevu.IslemID = randevu.IslemID;
                     existingRandevu.Tarih = randevu.Tarih;
                     existingRandevu.Durum = randevu.Durum;
                     c.SaveChanges(); // Güncellemeyi kaydediyoruz
