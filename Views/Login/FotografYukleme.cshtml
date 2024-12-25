@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Fotoğraf Analizi";
+}
+
+<div class="container d-flex justify-content-center align-items-center mt-5">
+    <div class="card shadow p-5 bg-light" style="max-width: 600px; width: 100%;">
+        <h2 class="text-center text-primary fw-bold">HOŞGELDİNİZ</h2>
+        <h4 class="text-center text-muted mb-4">Size uygun saç modelini birlikte bulalım mı?</h4>
+
+        <form method="post" enctype="multipart/form-data" asp-action="FotografYukle" class="text-center">
+            <div class="mb-3">
+                <label for="file" class="form-label fw-semibold">Fotoğraf Yükleyin:</label>
+                <input type="file" class="form-control" name="file" accept="image/*" required />
+            </div>
+
+            <button type="submit" class="btn btn-primary px-5 mt-3">Yükle ve Analiz Et</button>
+        </form>
+
+        @if (ViewBag.Analiz != null)
+        {
+            <div class="mt-5 text-center">
+                <h3 class="text-success">Analiz Sonucu:</h3>
+                <p class="fw-medium">@ViewBag.Analiz</p>
+            </div>
+        }
+    </div>
+</div>
