@@ -5005,6 +5005,88 @@
       ]
     },
     {
+      "Route": "uploads/Cristiano_Ronaldo_WC2022_-_01.7kwwknup41.jpg",
+      "AssetFile": "uploads/Cristiano_Ronaldo_WC2022_-_01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "147278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KSPjRzvY0n6GBdNuYZqU4A/6AUs5F//Clsqgg11zl2c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 20:52:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7kwwknup41"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KSPjRzvY0n6GBdNuYZqU4A/6AUs5F//Clsqgg11zl2c="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/Cristiano_Ronaldo_WC2022_-_01.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/Cristiano_Ronaldo_WC2022_-_01.jpg",
+      "AssetFile": "uploads/Cristiano_Ronaldo_WC2022_-_01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "147278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KSPjRzvY0n6GBdNuYZqU4A/6AUs5F//Clsqgg11zl2c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 20:52:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KSPjRzvY0n6GBdNuYZqU4A/6AUs5F//Clsqgg11zl2c="
+        }
+      ]
+    },
+    {
       "Route": "uploads/foto.png",
       "AssetFile": "uploads/foto.png",
       "Selectors": [],
@@ -5031,7 +5113,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 20:04:28 GMT"
+          "Value": "Fri, 27 Dec 2024 16:12:14 GMT"
         }
       ],
       "EndpointProperties": [
@@ -5068,7 +5150,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 20:04:28 GMT"
+          "Value": "Fri, 27 Dec 2024 16:12:14 GMT"
         }
       ],
       "EndpointProperties": [
@@ -5083,6 +5165,88 @@
         {
           "Name": "label",
           "Value": "uploads/foto.png"
+        }
+      ]
+    },
+    {
+      "Route": "uploads/resized_Cristiano_Ronaldo_WC2022_-_01.jpg",
+      "AssetFile": "uploads/resized_Cristiano_Ronaldo_WC2022_-_01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18754"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p89wRb6gA6NuF+uN3MuqnauYH35wtd2QmZ4pMcgYtLU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 20:52:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p89wRb6gA6NuF+uN3MuqnauYH35wtd2QmZ4pMcgYtLU="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/resized_Cristiano_Ronaldo_WC2022_-_01.n4w8vzlpzm.jpg",
+      "AssetFile": "uploads/resized_Cristiano_Ronaldo_WC2022_-_01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18754"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p89wRb6gA6NuF+uN3MuqnauYH35wtd2QmZ4pMcgYtLU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 25 Dec 2024 20:52:03 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n4w8vzlpzm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p89wRb6gA6NuF+uN3MuqnauYH35wtd2QmZ4pMcgYtLU="
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/resized_Cristiano_Ronaldo_WC2022_-_01.jpg"
         }
       ]
     },
@@ -5113,7 +5277,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 20:04:28 GMT"
+          "Value": "Fri, 27 Dec 2024 16:12:14 GMT"
         }
       ],
       "EndpointProperties": [
@@ -5158,7 +5322,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 25 Dec 2024 20:04:28 GMT"
+          "Value": "Fri, 27 Dec 2024 16:12:14 GMT"
         }
       ],
       "EndpointProperties": [

@@ -58,5 +58,7 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\uploads\Cristiano_Ronaldo_WC2022_-_01.jpg
 wwwroot\uploads\foto.png
+wwwroot\uploads\resized_Cristiano_Ronaldo_WC2022_-_01.jpg
 wwwroot\uploads\resized_foto.png
