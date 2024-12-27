@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\views\\admin\\hizmetekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\admin\\hizmetekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\views\\admin\\hizmetguncelle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\admin\\hizmetguncelle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\views\\admin\\hizmetsilme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\admin\\hizmetsilme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\views\\admin\\hizmetgoruntuleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\admin\\hizmetgoruntuleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\views\\admin\\hizmetguncelleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\admin\\hizmetguncelleme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\views\\admin\\randevual.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\admin\\randevual.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\models\\islem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:models\\islem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\views\\admin\\randevuekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\admin\\randevuekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\views\\admin\\calisanekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\admin\\calisanekle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\views\\admin\\randevuislemleri.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:views\\admin\\randevuislemleri.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\models\\randevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:models\\randevu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\models\\randevuislem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:models\\randevuislem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|c:\\users\\win 10\\desktop\\webprojesitaslak\\berber\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5869A360-6E5D-4E39-AC47-91F199D56981}|berber.csproj|solutionrelative:models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,94 +62,113 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HizmetEkle.cshtml",
-              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\HizmetEkle.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\HizmetEkle.cshtml",
-              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\HizmetEkle.cshtml*",
-              "RelativeToolTip": "Views\\Admin\\HizmetEkle.cshtml*",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-24T20:05:32.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HizmetGoruntuleme.cshtml",
-              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\HizmetGoruntuleme.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\HizmetGoruntuleme.cshtml",
-              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\HizmetGoruntuleme.cshtml",
-              "RelativeToolTip": "Views\\Admin\\HizmetGoruntuleme.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "RandevuEkle.cshtml",
+              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\RandevuEkle.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\RandevuEkle.cshtml",
+              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\RandevuEkle.cshtml",
+              "RelativeToolTip": "Views\\Admin\\RandevuEkle.cshtml",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwFgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-24T20:05:29.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HizmetSilme.cshtml",
-              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\HizmetSilme.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\HizmetSilme.cshtml",
-              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\HizmetSilme.cshtml",
-              "RelativeToolTip": "Views\\Admin\\HizmetSilme.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-24T20:05:07.379Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T11:21:00.22Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HizmetGuncelle.cshtml",
-              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\HizmetGuncelle.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\HizmetGuncelle.cshtml",
-              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\HizmetGuncelle.cshtml",
-              "RelativeToolTip": "Views\\Admin\\HizmetGuncelle.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-24T20:04:33.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HizmetGuncelleme.cshtml",
-              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\HizmetGuncelleme.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\HizmetGuncelleme.cshtml",
-              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\HizmetGuncelleme.cshtml",
-              "RelativeToolTip": "Views\\Admin\\HizmetGuncelleme.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-24T20:04:29.05Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AgIAAPcCAAAAAAAAAAAqwBoDAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcDAAAAAAAAAAAowA8DAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T20:04:11.585Z",
+              "WhenOpened": "2024-12-27T11:11:50.507Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Controllers\\LoginController.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T20:04:06.031Z",
+              "DocumentIndex": 0,
+              "Title": "RandevuAl.cshtml",
+              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\RandevuAl.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\RandevuAl.cshtml",
+              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\RandevuAl.cshtml",
+              "RelativeToolTip": "Views\\Admin\\RandevuAl.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T11:14:13.891Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CalisanEkle.cshtml",
+              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\CalisanEkle.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\CalisanEkle.cshtml",
+              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\CalisanEkle.cshtml",
+              "RelativeToolTip": "Views\\Admin\\CalisanEkle.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T11:16:32.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RandevuIslemleri.cshtml",
+              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\RandevuIslemleri.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\RandevuIslemleri.cshtml",
+              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Views\\Admin\\RandevuIslemleri.cshtml",
+              "RelativeToolTip": "Views\\Admin\\RandevuIslemleri.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAEgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-27T11:14:57.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Randevu.cs",
+              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Models\\Randevu.cs",
+              "RelativeDocumentMoniker": "Models\\Randevu.cs",
+              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Models\\Randevu.cs",
+              "RelativeToolTip": "Models\\Randevu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T11:06:29.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RandevuIslem.cs",
+              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Models\\RandevuIslem.cs",
+              "RelativeDocumentMoniker": "Models\\RandevuIslem.cs",
+              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Models\\RandevuIslem.cs",
+              "RelativeToolTip": "Models\\RandevuIslem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T11:06:33.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Islem.cs",
+              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Models\\Islem.cs",
+              "RelativeDocumentMoniker": "Models\\Islem.cs",
+              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Models\\Islem.cs",
+              "RelativeToolTip": "Models\\Islem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T19:01:03.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Context.cs",
+              "DocumentMoniker": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Models\\Context.cs",
+              "RelativeDocumentMoniker": "Models\\Context.cs",
+              "ToolTip": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\Models\\Context.cs",
+              "RelativeToolTip": "Models\\Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T20:52:45.987Z"
             }
           ]
         },
