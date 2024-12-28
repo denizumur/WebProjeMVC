@@ -36,6 +36,8 @@ namespace berber.Controllers
 
 			return View();
 		}
+
+
 		public IActionResult Giris(Kullanici kullanici)
 		{
 			
@@ -62,6 +64,9 @@ namespace berber.Controllers
 			TempData["uyari"] = "Başarısız giriş. Lütfen kullanıcı adı ve şifrenizi kontrol edin.";
 			return RedirectToAction("Index"); // Giriş sayfasına tekrar yönlendir
 		}
+
+
+
 		public IActionResult Anasayfa()
 		{
 
@@ -73,30 +78,43 @@ namespace berber.Controllers
 			TempData["uyari"] = "Lütfen login olunuz";
 			return RedirectToAction("Index");
 		}
-		public IActionResult RandevuEkle() {
 
+
+
+
+
+
+
+
+
+
+
+
+		[HttpGet]
+		public IActionResult RandevuEkle()
+		{
 			if (HttpContext.Session.GetString("KullaniciID") is not null)
 			{
 				ViewBag.Calisanlar = c.Calisanlar.ToList();
 				ViewBag.Islemler = c.Islemler.ToList();
+				ViewBag.UygunSaatler = new List<TimeSpan>(); // Başlangıçta boş gönderiyoruz
 				return View();
 			}
-			
-			TempData["uyari"] = "Lütfen login olunuz";
-			return RedirectToAction("Index");
+
+			TempData["uyari"] = "Lütfen login olunuz.";
+			return RedirectToAction("Index", "Login");
 		}
 
 		[HttpPost]
-		public IActionResult RandevuYeni(Randevu model, List<int> selectedIslemler)
+		public IActionResult RandevuEkle(Randevu model, List<int> selectedIslemler, string selectedSaat)
 		{
-			// Kullanıcı girişi kontrolü
-			if (HttpContext.Session.GetString("KullaniciID") == null)
+			if (HttpContext.Session.GetString("KullaniciID") is null)
 			{
 				TempData["uyari"] = "Lütfen login olunuz.";
-				return RedirectToAction("Index", "Login"); // Login sayfasına yönlendir
+				return RedirectToAction("Index", "Login");
 			}
 
-			// Kullanıcı bilgisini session'dan al
+			// Kullanıcı bilgisi session'dan alınıyor
 			int? kullaniciID = HttpContext.Session.GetInt32("KullaniciID");
 			if (kullaniciID == null)
 			{
@@ -104,40 +122,235 @@ namespace berber.Controllers
 				return RedirectToAction("Index", "Login");
 			}
 
-			// Model'in KullaniciID'sini giriş yapan kullanıcının ID'si ile güncelle
+			// Günlük randevu sayısı kontrolü
+			var bugunkuRandevular = c.Randevular
+				.Where(r => r.KullaniciID == kullaniciID && r.Tarih.Date == model.Tarih.Date)
+				.Count();
+
+			if (bugunkuRandevular >= 2)
+			{
+				TempData["HataMesaji"] = "Bir kullanıcı bir günde en fazla 2 randevu alabilir.";
+				LoadViewData(model);
+				return View(model);
+			}
+
+			// Model'in KullaniciID'sini giriş yapan kullanıcıya ata
 			model.KullaniciID = kullaniciID;
 
-			// Durum alanını varsayılan olarak "Beklemede" (false) yap
-			if (model.Durum == null)
+			// Tarih kontrolü
+			if (model.Tarih.Date < DateTime.Today)
 			{
-				model.Durum = false;
+				TempData["HataMesaji"] = "Bugünden önceki bir tarih için randevu oluşturulamaz.";
+				LoadViewData(model);
+				return View(model);
+			}
+
+			// Seçilen saat ile tarihi birleştir ve model.Tarih'e ata
+			if (!string.IsNullOrEmpty(selectedSaat))
+			{
+				if (DateTime.TryParse($"{model.Tarih:yyyy-MM-dd} {selectedSaat}", out DateTime randevuZamani))
+				{
+					// Geçmiş saat kontrolü
+					if (model.Tarih.Date == DateTime.Today && randevuZamani <= DateTime.Now)
+					{
+						TempData["HataMesaji"] = "Geçmiş bir saat için randevu oluşturulamaz.";
+						LoadViewData(model);
+						return View(model);
+					}
+
+					model.Tarih = randevuZamani;
+				}
+				else
+				{
+					TempData["HataMesaji"] = "Geçersiz saat seçimi.";
+					LoadViewData(model);
+					return View(model);
+				}
+			}
+			else
+			{
+				TempData["HataMesaji"] = "Lütfen bir saat seçin.";
+				LoadViewData(model);
+				return View(model);
+			}
+
+			// İşlemleri ve sürelerini al
+			var islemler = c.Islemler.ToList();
+			var totalServiceTime = selectedIslemler
+				.Select(islemID => islemler.FirstOrDefault(i => i.IslemID == islemID)?.Sure ?? 0)
+				.Sum();
+
+			// Randevu bitiş saatini hesapla
+			TimeSpan selectedTime = model.Tarih.TimeOfDay;
+			TimeSpan endTime = selectedTime.Add(TimeSpan.FromMinutes(totalServiceTime));
+
+			// Kapanış saati kontrolü
+			TimeSpan closingTime = new TimeSpan(19, 0, 0);
+			if (endTime > closingTime)
+			{
+				TempData["HataMesaji"] = $"Seçilen saat ({selectedSaat}) ve işlemler toplam süresi kapanış saatini ({closingTime}) aşıyor.";
+				LoadViewData(model);
+				return View(model);
+			}
+
+			// Mevcut randevularla çakışma kontrolü
+			var mevcutRandevular = c.Randevular
+				.Where(r => r.CalisanID == model.CalisanID && r.Tarih.Date == model.Tarih.Date)
+				.ToList();
+
+			var randevuZamanlari = mevcutRandevular.Select(r =>
+			{
+				var randevuBaslangic = r.Tarih.TimeOfDay;
+
+				// Randevu sürelerini hesapla
+				var randevuSure = c.RandevuIslemler
+					.Where(ri => ri.RandevuID == r.RandevuID)
+					.ToList() // Sadece bu randevuya ait işlemleri al
+					.Sum(ri =>
+					{
+						var islem = islemler.FirstOrDefault(i => i.IslemID == ri.IslemID);
+						return islem?.Sure ?? 0; // Süre null ise 0 döner
+					});
+
+				var randevuBitis = randevuBaslangic.Add(TimeSpan.FromMinutes(randevuSure));
+				return new { Baslangic = randevuBaslangic, Bitis = randevuBitis };
+			}).ToList();
+
+			if (randevuZamanlari.Any(r => selectedTime < r.Bitis && endTime > r.Baslangic))
+			{
+				TempData["HataMesaji"] = "Seçilen saat mevcut randevularla çakışıyor.";
+				LoadViewData(model);
+				return View(model);
 			}
 
 			// Randevuyu kaydet
+			model.Durum = false;
 			c.Randevular.Add(model);
-			c.SaveChanges(); // Kaydetme işlemi
+			c.SaveChanges();
 
-			// Seçilen hizmetleri RandevuIslem tablosuna ekle
+			// Seçilen işlemleri kaydet
 			if (selectedIslemler != null && selectedIslemler.Any())
 			{
 				foreach (var islemID in selectedIslemler)
 				{
 					var randevuIslem = new RandevuIslem
 					{
-						RandevuID = model.RandevuID,  // Yeni kaydedilen randevu ID'si
+						RandevuID = model.RandevuID,
 						IslemID = islemID
 					};
 					c.RandevuIslemler.Add(randevuIslem);
 				}
-
-				// Hizmet kayıtlarını kaydet
 				c.SaveChanges();
 			}
 
 			TempData["BasariMesaji"] = "Randevu başarıyla kaydedildi.";
-			return RedirectToAction("Anasayfa"); // Randevuları görüntülemek için yönlendir
+			return RedirectToAction("Randevularim"); // Kullanıcıya özel bir sayfaya yönlendirme
 		}
 
+
+
+
+
+
+
+		private void LoadViewData(Randevu model)
+		{
+			ViewBag.Calisanlar = c.Calisanlar.ToList();
+			ViewBag.Islemler = c.Islemler.ToList();
+
+			var tumSaatler = new List<string>();
+			for (var time = new TimeSpan(9, 0, 0); time < new TimeSpan(19, 0, 0); time = time.Add(TimeSpan.FromMinutes(10)))
+			{
+				tumSaatler.Add(time.ToString(@"hh\:mm"));
+			}
+
+			if (model.Tarih.Date == DateTime.Today)
+			{
+				var simdikiSaat = DateTime.Now.TimeOfDay;
+				tumSaatler = tumSaatler.Where(saat =>
+				{
+					var timeSpan = TimeSpan.Parse(saat);
+					return timeSpan > simdikiSaat;
+				}).ToList();
+			}
+
+			ViewBag.UygunSaatler = tumSaatler;
+		}
+
+
+		[HttpGet]
+		public IActionResult GetAvailableHours(int calisanId, DateTime selectedDate)
+		{
+			var tumSaatler = new List<string>();
+
+			// 09:00 ile 17:00 arasında, 10 dakikalık aralıklarla saatleri oluştur
+			for (var time = new TimeSpan(9, 0, 0); time < new TimeSpan(19, 0, 0); time = time.Add(TimeSpan.FromMinutes(10)))
+			{
+				tumSaatler.Add(time.ToString(@"hh\:mm"));
+			}
+
+			// Seçilen çalışanın belirtilen tarihte alınan randevuları ve hizmet sürelerini hesapla
+			var alinanRandevular = c.Randevular
+				.Where(r => r.CalisanID == calisanId && r.Tarih.Date == selectedDate.Date)
+				.Select(r => new
+				{
+					BaslangicSaati = r.Tarih.TimeOfDay,
+					RandevuID = r.RandevuID
+				})
+				.ToList();
+
+			// Veritabanından Islemler tablosundaki tüm verileri çekin (bellek üzerinde işlem yapacağız)
+			var islemler = c.Islemler.ToList();
+
+			// Veritabanından RandevuIslemler tablosundaki tüm verileri çekin
+			var randevuIslemler = c.RandevuIslemler.ToList();
+
+			// Randevulara ait bitiş saatlerini hesapla
+			var randevularlaBirlikte = alinanRandevular.Select(r =>
+			{
+				var toplamSure = randevuIslemler
+					.Where(ri => ri.RandevuID == r.RandevuID)
+					.Sum(ri =>
+					{
+						var islem = islemler.FirstOrDefault(i => i.IslemID == ri.IslemID);
+						return islem?.Sure ?? 0;
+					});
+
+				// BitisSaati'ni hesapla ve anonim tipte döndür
+				var bitisSaati = r.BaslangicSaati.Add(TimeSpan.FromMinutes(toplamSure));
+
+				return new
+				{
+					r.BaslangicSaati,
+					r.RandevuID,
+					BitisSaati = bitisSaati
+				};
+			}).ToList();
+
+			// Eğer tarih bugüne eşitse, geçmiş saatleri çıkar
+			if (selectedDate.Date == DateTime.Today)
+			{
+				var currentTime = DateTime.Now.TimeOfDay;
+				tumSaatler = tumSaatler.Where(saat =>
+				{
+					var saatSpan = TimeSpan.Parse(saat);
+					return saatSpan > currentTime;
+				}).ToList();
+			}
+
+			// Tüm saatlerden çakışan saatleri çıkar
+			tumSaatler = tumSaatler.Where(saat =>
+			{
+				var saatSpan = TimeSpan.Parse(saat);
+
+				// Çakışma kontrolü
+				return !randevularlaBirlikte.Any(r =>
+					saatSpan >= r.BaslangicSaati && saatSpan < r.BitisSaati
+				);
+			}).ToList();
+
+			return Json(tumSaatler);
+		}
 
 
 		[HttpGet]
@@ -156,29 +369,52 @@ namespace berber.Controllers
 		}
 
 
+
+
+
+
+
+
+
+
+
+		//randevu görüntüleme
+
 		public IActionResult Randevularim()
 		{
-			// Kullanıcı ID'sini session'dan al
+			
 			
 			int? kullaniciID = HttpContext.Session.GetInt32("KullaniciID");
 
 			if (kullaniciID == null)
 			{
 				TempData["uyari"] = "Lütfen giriş yapın.";
-				return RedirectToAction("Index", "Login"); // Giriş sayfasına yönlendir
+				return RedirectToAction("Index", "Login"); 
 			}
 
-			// Kullanıcıya ait randevuları filtreleyerek sorgula
+			
 			var randevular = c.Randevular
-				.Where(r => r.KullaniciID == kullaniciID)  // Sadece giriş yapan kullanıcının randevuları
-				.Include(x => x.Calisan)         // Calisan ilişkisini dahil et
-				.Include(x => x.Kullanici)       // Kullanici ilişkisini dahil et
-				.Include(x => x.RandevuIslemler) // RandevuIslemler ilişkisini dahil et
-				.ThenInclude(ri => ri.Islem)     // RandevuIslem üzerinden Islem ilişkisini dahil et
-				.ToList();                       // Veritabanındaki tüm randevuları alıyoruz
+				.Where(r => r.KullaniciID == kullaniciID)  
+				.Include(x => x.Calisan)         
+				.Include(x => x.Kullanici)       
+				.Include(x => x.RandevuIslemler) 
+				.ThenInclude(ri => ri.Islem)     
+				.ToList();                       
 
-			return View(randevular);            // Randevuları View'a gönderiyoruz
+			return View(randevular);          
 		}
+
+
+		//randevu görüntüleme
+
+
+
+
+
+
+
+
+		//session silme çıkış
 
 		public IActionResult LogOut() {
 
@@ -193,6 +429,14 @@ namespace berber.Controllers
 
 			return RedirectToAction("Index");
 		}
+
+		//session silme çıkış
+
+
+
+
+
+		//kullanıcı bilgileri güncelleme başlangıç
 
 		public IActionResult Guncelleme() {
 
@@ -261,6 +505,29 @@ namespace berber.Controllers
 
 		}
 
+		//kullanıcı bilgileri güncelleme bitiş
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		[HttpPost]
 		public async Task<IActionResult> FotografYukle(IFormFile file)
@@ -307,6 +574,27 @@ namespace berber.Controllers
 				return resizedPath;
 			}
 		}
+
+
+		public IActionResult Hakkimizda() {
+
+
+			if (HttpContext.Session.GetString("KullaniciID") is not null)
+			{
+				// Çalışanları ve her bir çalışanın ilgili işlemlerini (hizmetlerini) eager loading ile alıyoruz.
+				var calisanlar = c.Calisanlar
+					.Include(c => c.CalisanIslemler)  // Çalışan işlemleri
+					.ThenInclude(ci => ci.Islem)     // Her işlemle ilişkili olan işlem (hizmet) bilgisi
+					.ToList();
+
+				return View(calisanlar);
+			}
+			return RedirectToAction("Index", "Login");
+		}
+
+
+
+
 
 		private int TahminiTokenSayisi(string base64Image)
 		{

@@ -30,6 +30,33 @@ namespace berber.Controllers
 			return RedirectToAction("Index","Login");
 		}
 
+
+
+		[HttpGet]
+		public IActionResult Butce()
+		{
+			var gunlukButce = c.RandevuIslemler
+				.Join(c.Randevular, ri => ri.RandevuID, r => r.RandevuID, (ri, r) => new { r.Tarih, ri.IslemID })
+				.Join(c.Islemler, x => x.IslemID, i => i.IslemID, (x, i) => new { x.Tarih, i.Ucret })
+				.GroupBy(x => x.Tarih.Date)
+				.Select(grup => new
+				{
+					Tarih = grup.Key,
+					ToplamUcret = grup.Sum(x => x.Ucret)
+				})
+				.OrderBy(g => g.Tarih)
+				.ToList();
+
+			ViewBag.GunlukButce = gunlukButce;
+
+			return View();
+		}
+
+
+
+
+
+
 		public IActionResult CalisanIslemleri()
 		{
 			if (HttpContext.Session.GetString("admin") is not null)

@@ -4,86 +4,42 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-        /* Sidebar Styles */
-        .w3-sidebar-custom {
-            height: 100%;
-            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 150px;
-            padding-top: 20px;
-            transition: all 0.3s ease; /* Smooth transition */
-        }
-
-            /* Sidebar Item Styles */
-            .w3-sidebar-custom .w3-bar-item {
-                padding: 15px;
-                text-align: center;
-                font-size: 18px;
-                font-weight: bold;
-                color: white;
-                border-bottom: 1px solid #fff;
-                transition: background-color 0.3s ease;
-            }
-
-                .w3-sidebar-custom .w3-bar-item:hover {
-                    background-color: #ffb6b9; /* Hover effect */
-                }
-
-        /* Page Content Style */
-        .w3-container-custom {
-            margin-left: 150px;
-            padding: 20px;
-        }
-
-        /* Header Styling */
-        .w3-header-custom {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* Image Style */
-        .w3-image-custom {
-            width: 100%;
-            border-radius: 8px; /* Rounded corners for images */
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="~/css/navbar.css">
 </head>
 <body>
 
-    
-    <div class="w3-sidebar w3-sidebar-custom">
-        <h3 class="w3-bar-item">Menüler</h3>
+    <nav>
+        <ul>
+            <li><a href="/Login/Hakkimizda">Hakkımızda</a></li>
 
-        
-        <a href="/Login/RandevuEkle" class="w3-bar-item w3-button">Randevu Ekle</a>
-        <a href="/Login/Randevularim" class="w3-bar-item w3-button">Randevularım</a>
+            <li>
+                <a href="#">Randevu İşlemleri <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="/Login/RandevuEkle">Randevu Oluştur</a>
+                    <a href="/Login/Randevularim">Randevularım</a>
+                   
+                </div>
+            </li>
+                    
+            <li>
+                <a href="#">Hesap İşlemleri <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="/Login/Guncelleme">Bilgi Güncelleme</a>                 
+                </div>
+            </li>
 
+            <li><a href="/Login/LogOut">Çıkış</a></li>
 
+        </ul>
+    </nav>
 
-        <a href="/Login/Guncelleme" class="w3-bar-item w3-button">Kullanıcı Bilgi Güncelleme</a>
-
-        <a href="/Login/FotografYukleme" class="w3-bar-item w3-button">Foto</a>
-
-        <a href="/Login/LogOut" class="w3-bar-item w3-button">Çıkış</a>
-    </div>
-
-   
     <div class="w3-container-custom">
-        <div class="w3-header-custom">
-            <h1>Berber</h1>
-        </div>
-
-        
-        <div class="w3-container">
-            @RenderBody() 
+       
+        <div>
+            @RenderBody()
         </div>
     </div>
-
     
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

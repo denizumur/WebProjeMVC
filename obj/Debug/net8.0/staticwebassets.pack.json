@@ -5,12 +5,32 @@
       "PackagePath": "staticwebassets\\berber.i0fscanerb.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\hakkimizda.css",
+      "PackagePath": "staticwebassets\\css\\hakkimizda.css"
+    },
+    {
+      "Id": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\navbar.css",
+      "PackagePath": "staticwebassets\\css\\navbar.css"
+    },
+    {
       "Id": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\images\\11.png",
+      "PackagePath": "staticwebassets\\images\\11.png"
+    },
+    {
+      "Id": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\images\\logo.svg",
+      "PackagePath": "staticwebassets\\images\\logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\js\\navbar.js",
+      "PackagePath": "staticwebassets\\js\\navbar.js"
     },
     {
       "Id": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\js\\site.js",

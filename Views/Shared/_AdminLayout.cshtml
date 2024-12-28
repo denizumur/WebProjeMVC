@@ -1,40 +1,75 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="~/css/navbar.css">
+   
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Admin İşlemleri <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="/Admin/Butce">Günlük Gelirler</a>
+                    <a href="/Admin/CalisanEkle">Çalışan Ekle</a>
+                    <a href="/Admin/CalisanGuncelleme">Çalışan Güncelle</a>
+                    <a href="/Admin/CalisanSilme">Çalışan Sil</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Çalışan İşlemleri <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="/Admin/CalisanGoruntuleme">Çalışan Görüntüleme</a>
+                    <a href="/Admin/CalisanEkle">Çalışan Ekle</a>
+                    <a href="/Admin/CalisanGuncelleme">Çalışan Güncelle</a>
+                    <a href="/Admin/CalisanSilme">Çalışan Sil</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Hizmet İşlemleri <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="/Admin/HizmetGoruntuleme">Hizmet Görüntüleme</a>
+                    <a href="/Admin/HizmetEkle">Hizmet Ekle</a>
+                    <a href="/Admin/HizmetGuncelleme">Hizmet Güncelle</a>
+                    <a href="/Admin/HizmetSilme">Hizmet Sil</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Randevu İşlemleri <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="/Admin/RandevuGoruntuleme">Randevu Görüntüleme</a>
+                    <a href="/Admin/RandevuEkle">Randevu Ekle</a>
+                    <a href="/Admin/RandevuGuncelleme">Randevu Güncelle</a>
+                    <a href="/Admin/RandevuSilme">Randevu Sil</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Kayıtlı Kullanıcı İşlemleri <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-menu">
+                    <a href="/Admin/KullaniciGoruntuleme">Kullanıcı Görüntüleme</a>
+                    <a href="/Admin/KullaniciEkle">Kullanıcı Ekle</a>
+                    <a href="/Admin/KullaniciGuncelleme">Kullanıcı Güncelle</a>
+                    <a href="/Admin/KullaniciSilme">Kullanıcı Sil</a>
+                </div>
+            </li>
 
-    
+            <li><a href="/Admin/LogOut">Log Out</a></li>
+        </ul>
+    </nav>
 
-    
     <div class="w3-container-custom">
         <div class="w3-header-custom">
             <h1>Berber Projesi Admin Paneli</h1>
         </div>
 
-        <div >
-
-            <a href="/Admin/LogOut" class="w3-bar-item w3-button">Admin panelinden çıkış</a>
-
-        </div>
         <div>
-
-            <a href="/Admin/Index" class="w3-bar-item w3-button">Menü</a>
-
-        </div>
-        <div class="w3-container">
-            @RenderBody() 
+            @RenderBody()
         </div>
     </div>
-
-    
-
-
-
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
