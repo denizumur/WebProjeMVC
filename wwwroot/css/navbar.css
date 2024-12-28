@@ -1,0 +1,97 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #2c2c32;
+    color: white;
+}
+
+nav {
+    background-color: #19191c;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+        nav ul li {
+            position: relative;
+        }
+
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                padding: 15px 20px;
+                display: block;
+                font-size: 16px;
+                transition: background-color 0.3s, color 0.3s;
+            }
+
+                /* Hover olduğunda renk değişimi */
+                nav ul li a:hover {
+                    background-color: #333;
+                    color: #fff;
+                }
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    display: none;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+    .dropdown-menu a {
+        padding: 10px 20px;
+        display: block;
+        text-align: left;
+        font-size: 14px;
+        color: white; /* Varsayılan renk */
+        background-color: #333; /* Arka plan rengi */
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        /* Hover olduğunda renk değişimi */
+        .dropdown-menu a:hover {
+            background-color: #444;
+            color: #fff;
+        }
+
+        nav ul li a:visited,
+        .dropdown-menu a:visited {
+            color: white; /* Ziyaret edilmiş linkler için aynı renk */
+            background-color: #333; /* Arka plan değişmez */
+        }
+
+        /* Aktif (current) linkin rengi */
+        nav ul li a:active,
+        .dropdown-menu a:active {
+            color: #ddd;
+            background-color: #444;
+        }
+
+nav ul li:hover .dropdown-menu {
+    display: block;
+}
+
+.w3-container-custom {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.w3-header-custom {
+    text-align: center;
+    margin-bottom: 20px;
+}

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yeO55PzItEE5O4HD2tPkW+/QIgSC17XeGT4rjcO/tAk=",
+  "Hash": "Oc7AY5vl89cNOJUJlEZ3dfeN236EbGmVd5Q2rBydsM8=",
   "Source": "berber",
   "BasePath": "_content/berber",
   "Mode": "Default",
@@ -59,6 +59,48 @@
       "OriginalItemSpec": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\berber.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\hakkimizda.css",
+      "SourceId": "berber",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\",
+      "BasePath": "_content/berber",
+      "RelativePath": "css/hakkimizda#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hbviosdhke",
+      "Integrity": "DYeg+s/GmCgdLtVCeRAH5peuj1SYkoOk9JwJgH7E1ZQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\hakkimizda.css"
+    },
+    {
+      "Identity": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\navbar.css",
+      "SourceId": "berber",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\",
+      "BasePath": "_content/berber",
+      "RelativePath": "css/navbar#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iv4lg10z8z",
+      "Integrity": "7n8aUAUqfoUkuIyr8IrCBKapBA5IjzGQY7nsG+YcnCI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\navbar.css"
+    },
+    {
       "Identity": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\site.css",
       "SourceId": "berber",
       "SourceType": "Discovered",
@@ -73,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "38kqumchfv",
+      "Integrity": "497/JXxv2HlteY7HpfPEI1SZU9oefGoi2dyCU95mi3I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -101,6 +143,69 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\images\\11.png",
+      "SourceId": "berber",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\",
+      "BasePath": "_content/berber",
+      "RelativePath": "images/11#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yajksnwgol",
+      "Integrity": "uvaC7rfrmIdQRcRA96v4EK441L5FWZWOZpK13W3v6BE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\11.png"
+    },
+    {
+      "Identity": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\images\\logo.svg",
+      "SourceId": "berber",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\",
+      "BasePath": "_content/berber",
+      "RelativePath": "images/logo#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lth98j6s4j",
+      "Integrity": "h6mYaaLTn3/I78HVAMFC287Wb3cNXLn2IxCDL7AtMrc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\js\\navbar.js",
+      "SourceId": "berber",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\",
+      "BasePath": "_content/berber",
+      "RelativePath": "js/navbar#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u9umy3tyc4",
+      "Integrity": "wuDM1KXbVbhnLOwNdj/U1IQA6Vw3q6zibXD9WYXIuWg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\navbar.js"
+    },
+    {
       "Identity": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\js\\site.js",
       "SourceId": "berber",
       "SourceType": "Discovered",
@@ -115,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xtxxf3hu2r",
-      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
+      "Fingerprint": "rgssez836f",
+      "Integrity": "G/kUc8PljmEeRcVtTyI2BQR7UmK1qvbKinof5YM2Iz0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -1569,8 +1674,8 @@
       ]
     },
     {
-      "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\site.css",
+      "Route": "css/hakkimizda.css",
+      "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\hakkimizda.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1579,7 +1684,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "1349"
         },
         {
           "Name": "Content-Type",
@@ -1587,11 +1692,48 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"DYeg+s/GmCgdLtVCeRAH5peuj1SYkoOk9JwJgH7E1ZQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 18:22:31 GMT"
+          "Value": "Sat, 28 Dec 2024 12:00:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DYeg+s/GmCgdLtVCeRAH5peuj1SYkoOk9JwJgH7E1ZQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/hakkimizda.hbviosdhke.css",
+      "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\hakkimizda.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1349"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DYeg+s/GmCgdLtVCeRAH5peuj1SYkoOk9JwJgH7E1ZQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 12:00:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1601,7 +1743,134 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
+          "Value": "hbviosdhke"
+        },
+        {
+          "Name": "label",
+          "Value": "css/hakkimizda.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DYeg+s/GmCgdLtVCeRAH5peuj1SYkoOk9JwJgH7E1ZQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/navbar.css",
+      "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\navbar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7n8aUAUqfoUkuIyr8IrCBKapBA5IjzGQY7nsG+YcnCI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 14:13:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7n8aUAUqfoUkuIyr8IrCBKapBA5IjzGQY7nsG+YcnCI="
+        }
+      ]
+    },
+    {
+      "Route": "css/navbar.iv4lg10z8z.css",
+      "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\navbar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2284"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7n8aUAUqfoUkuIyr8IrCBKapBA5IjzGQY7nsG+YcnCI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 14:13:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iv4lg10z8z"
+        },
+        {
+          "Name": "label",
+          "Value": "css/navbar.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7n8aUAUqfoUkuIyr8IrCBKapBA5IjzGQY7nsG+YcnCI="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.38kqumchfv.css",
+      "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2494"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"497/JXxv2HlteY7HpfPEI1SZU9oefGoi2dyCU95mi3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 14:05:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "38kqumchfv"
         },
         {
           "Name": "label",
@@ -1609,7 +1878,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-497/JXxv2HlteY7HpfPEI1SZU9oefGoi2dyCU95mi3I="
         }
       ]
     },
@@ -1624,7 +1893,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "2494"
         },
         {
           "Name": "Content-Type",
@@ -1632,11 +1901,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"497/JXxv2HlteY7HpfPEI1SZU9oefGoi2dyCU95mi3I=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 18:22:31 GMT"
+          "Value": "Sat, 28 Dec 2024 14:05:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1646,7 +1915,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-497/JXxv2HlteY7HpfPEI1SZU9oefGoi2dyCU95mi3I="
         }
       ]
     },
@@ -1733,6 +2002,252 @@
       ]
     },
     {
+      "Route": "images/11.png",
+      "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\images\\11.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6817"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uvaC7rfrmIdQRcRA96v4EK441L5FWZWOZpK13W3v6BE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 11:46:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uvaC7rfrmIdQRcRA96v4EK441L5FWZWOZpK13W3v6BE="
+        }
+      ]
+    },
+    {
+      "Route": "images/11.yajksnwgol.png",
+      "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\images\\11.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6817"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uvaC7rfrmIdQRcRA96v4EK441L5FWZWOZpK13W3v6BE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 11:46:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yajksnwgol"
+        },
+        {
+          "Name": "label",
+          "Value": "images/11.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uvaC7rfrmIdQRcRA96v4EK441L5FWZWOZpK13W3v6BE="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo.lth98j6s4j.svg",
+      "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\images\\logo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4583"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h6mYaaLTn3/I78HVAMFC287Wb3cNXLn2IxCDL7AtMrc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 11:46:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lth98j6s4j"
+        },
+        {
+          "Name": "label",
+          "Value": "images/logo.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-h6mYaaLTn3/I78HVAMFC287Wb3cNXLn2IxCDL7AtMrc="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo.svg",
+      "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\images\\logo.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4583"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"h6mYaaLTn3/I78HVAMFC287Wb3cNXLn2IxCDL7AtMrc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 11:46:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-h6mYaaLTn3/I78HVAMFC287Wb3cNXLn2IxCDL7AtMrc="
+        }
+      ]
+    },
+    {
+      "Route": "js/navbar.js",
+      "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\js\\navbar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "233"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wuDM1KXbVbhnLOwNdj/U1IQA6Vw3q6zibXD9WYXIuWg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 12:42:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wuDM1KXbVbhnLOwNdj/U1IQA6Vw3q6zibXD9WYXIuWg="
+        }
+      ]
+    },
+    {
+      "Route": "js/navbar.u9umy3tyc4.js",
+      "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\js\\navbar.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "233"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wuDM1KXbVbhnLOwNdj/U1IQA6Vw3q6zibXD9WYXIuWg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 12:42:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u9umy3tyc4"
+        },
+        {
+          "Name": "label",
+          "Value": "js/navbar.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wuDM1KXbVbhnLOwNdj/U1IQA6Vw3q6zibXD9WYXIuWg="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -1743,7 +2258,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "979"
         },
         {
           "Name": "Content-Type",
@@ -1751,11 +2266,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"G/kUc8PljmEeRcVtTyI2BQR7UmK1qvbKinof5YM2Iz0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 18:22:31 GMT"
+          "Value": "Sat, 28 Dec 2024 14:05:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1765,12 +2280,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-G/kUc8PljmEeRcVtTyI2BQR7UmK1qvbKinof5YM2Iz0="
         }
       ]
     },
     {
-      "Route": "js/site.xtxxf3hu2r.js",
+      "Route": "js/site.rgssez836f.js",
       "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1780,7 +2295,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "979"
         },
         {
           "Name": "Content-Type",
@@ -1788,11 +2303,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"G/kUc8PljmEeRcVtTyI2BQR7UmK1qvbKinof5YM2Iz0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 18:22:31 GMT"
+          "Value": "Sat, 28 Dec 2024 14:05:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1802,7 +2317,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
+          "Value": "rgssez836f"
         },
         {
           "Name": "label",
@@ -1810,7 +2325,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-G/kUc8PljmEeRcVtTyI2BQR7UmK1qvbKinof5YM2Iz0="
         }
       ]
     },
@@ -6593,7 +7108,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 16:12:14 GMT"
+          "Value": "Sat, 28 Dec 2024 12:26:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6630,7 +7145,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 16:12:14 GMT"
+          "Value": "Sat, 28 Dec 2024 12:26:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6757,7 +7272,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 16:12:14 GMT"
+          "Value": "Sat, 28 Dec 2024 12:26:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6802,7 +7317,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 16:12:14 GMT"
+          "Value": "Sat, 28 Dec 2024 12:26:15 GMT"
         },
         {
           "Name": "Cache-Control",
