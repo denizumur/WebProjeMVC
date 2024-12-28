@@ -8,7 +8,7 @@ namespace berber.Models
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-KRGVO7T\\SQLEXPRESS; database=berber32 ; integrated security=true; TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("server=DESKTOP-QGB5KU5\\SQLEXPRESS; database=berber3 ; integrated security=true; TrustServerCertificate=True;");
         }
         public Context(DbContextOptions<Context> options) : base(options) { }
 

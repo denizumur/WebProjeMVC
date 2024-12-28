@@ -12,8 +12,8 @@ using berber.Models;
 namespace berber.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20241228182808_apideneme1")]
-    partial class apideneme1
+    [Migration("20241228193547_sonddededededededde")]
+    partial class sonddededededededde
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

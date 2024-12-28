@@ -1,15 +1,5 @@
-﻿body {
-    margin: 0;
-    background: rgb(27 32 44 / 100%);
-    color: #f9f9f9;
-    font-family: "Euclid Circular A", "Poppins";
-}
-
-* {
-    box-sizing: border-box;
-}
-
-nav {
+﻿
+.baslik {
     position: sticky;
     z-index: 1;
     top: 0;
@@ -29,14 +19,7 @@ nav {
     transition: 0.3s;
 }
 
-    nav img {
-        height: 40px;
-    }
-
-    nav i {
-        font-size: 30px;
-        color: #f9f9f9;
-    }
+ 
 
 main {
     padding: 10px 30px;

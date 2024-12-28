@@ -1,15 +1,55 @@
-﻿@{
+﻿
 
-    var sUsr = Context.Session.GetString("KullaniciID");
 
-}
 @{
-    ViewData["Title"] = "Admin Paneli";
+    ViewData["Title"] = "Giriş Yap";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="alert-danger"> @TempData["uyari"] </div>
 
-<div> Session datası: @sUsr </div>
+<head>
+    <meta charset="UTF-8">
+    <title> Giriş </title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap'>
+    <link rel="stylesheet" href="~/css/login.css" />
+
+</head>
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    /* Arka plan görseli */
+    body {
+        background-image: url('./images/berber.jpg'); /* Görsel dosyasının yolu */
+        background-size: cover; /* Görselin tam ekran olmasını sağlar */
+        background-position: center center; /* Görselin merkezde hizalanmasını sağlar */
+        background-attachment: fixed; /* Görselin sayfa kaydırıldığında sabit kalmasını sağlar */
+        color: white; /* Yazı rengini beyaz yaparak kontrastı artırabilirsiniz */
+        font-family: Arial, sans-serif; /* Yazı tipi */
+    }
+
+    /* Başlık stili */
+    h1 {
+        text-align: center;
+        margin-top: 20%;
+        font-size: 4em;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Diğer içerikler için stil */
+    p {
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+
+</style>
 
 
-<h4>anasayfadasınız</h4>
+
+<body>
+    
+</body>

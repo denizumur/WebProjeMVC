@@ -4,6 +4,7 @@ wwwroot\css\navbar.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\11.png
+wwwroot\images\berber.jpg
 wwwroot\images\logo.svg
 wwwroot\js\navbar.js
 wwwroot\js\site.js
