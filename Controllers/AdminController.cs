@@ -52,43 +52,51 @@ namespace berber.Controllers
 			return View();
 		}
 
-
-
-
-
-
-		public IActionResult CalisanIslemleri()
+		[HttpGet]
+		public IActionResult CalisanVerimliligi()
 		{
-			if (HttpContext.Session.GetString("admin") is not null)
-			{
-				return View();
-			}
-			return RedirectToAction("Index", "Login");
+			var calisanKazanc = c.RandevuIslemler
+				.Join(c.Randevular, ri => ri.RandevuID, r => r.RandevuID, (ri, r) => new { r.Tarih, ri.IslemID, r.CalisanID }) // Burada Randevu tablosu ile ilişki kuruyoruz.
+				.Join(c.Islemler, x => x.IslemID, i => i.IslemID, (x, i) => new { x.Tarih, i.Ucret, x.CalisanID }) // Ucret bilgisi için Islemler tablosu ile ilişki kuruyoruz.
+				.Join(c.Calisanlar, x => x.CalisanID, c => c.CalisanID, (x, c) => new { x.Tarih, x.Ucret, x.CalisanID, c.AdSoyad }) // Calisanlar tablosuyla join yapıyoruz
+				.GroupBy(x => new { x.CalisanID, Tarih = x.Tarih.Date }) // Çalışan ve tarih bazında grupla
+				.Select(grup => new
+				{
+					CalisanAdi = grup.FirstOrDefault().AdSoyad, // Çalışan ismini alıyoruz
+					Tarih = grup.Key.Tarih, // Tarih kısmına doğru erişimi sağlıyoruz
+					ToplamUcret = grup.Sum(x => x.Ucret) // Toplam kazanç
+				})
+				.OrderBy(g => g.Tarih) // Tarihe göre sıralama
+				.ToList();
+
+			ViewBag.CalisanKazanc = calisanKazanc;
+
+			return View();
 		}
-		public IActionResult HizmetIslemleri()
+
+		[HttpGet]
+		public IActionResult CalisanToplamKazanc()
 		{
-			if (HttpContext.Session.GetString("admin") is not null)
-			{
-				return View();
-			}
-			return RedirectToAction("Index", "Login");
+			var calisanToplamKazanc = c.RandevuIslemler
+				.Join(c.Randevular, ri => ri.RandevuID, r => r.RandevuID, (ri, r) => new { r.CalisanID, ri.IslemID }) // RandevuIslemler ile Randevular'ı birleştiriyoruz
+				.Join(c.Islemler, x => x.IslemID, i => i.IslemID, (x, i) => new { x.CalisanID, i.Ucret }) // Islemler tablosuyla birleştirip ücret bilgisini alıyoruz
+				.Join(c.Calisanlar, x => x.CalisanID, c => c.CalisanID, (x, c) => new { x.CalisanID, c.AdSoyad, x.Ucret }) // Çalışanlar tablosu ile birleştiriyoruz
+				.GroupBy(x => x.CalisanID) // Çalışan bazında grupla
+				.Select(grup => new
+				{
+					CalisanAdi = grup.FirstOrDefault().AdSoyad, // İlk elemandan çalışan adını alıyoruz
+					ToplamKazanc = grup.Sum(x => x.Ucret), // Çalışan bazında tüm ücretlerin toplamını alıyoruz
+					ToplamRandevuSayisi = grup.Count() // Çalışanın yaptığı randevuların sayısını alıyoruz
+				})
+				.OrderBy(g => g.CalisanAdi) // Çalışan adına göre sıralıyoruz
+				.ToList();
+
+			ViewBag.CalisanToplamKazanc = calisanToplamKazanc;
+
+			return View();
 		}
-		public IActionResult RandevuIslemleri()
-		{
-			if (HttpContext.Session.GetString("admin") is not null)
-			{
-				return View();
-			}
-			return RedirectToAction("Index", "Login");
-		}
-		public IActionResult KullaniciIslemleri()
-		{
-			if (HttpContext.Session.GetString("admin") is not null)
-			{
-				return View();
-			}
-			return RedirectToAction("Index", "Login");
-		}
+
+
 
 
 

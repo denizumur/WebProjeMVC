@@ -15,24 +15,31 @@ namespace berber.Controllers
 		[HttpPost]
 		public IActionResult KullaniciEkle(Kullanici user)
 		{
+			// Model doğrulama kontrolü
 			if (ModelState.IsValid)
 			{
+				// Kullanıcı adı ile ilgili kontrol
+				var mevcutKullanici = c.Kullanicilar.FirstOrDefault(k => k.AdSoyad == user.AdSoyad);
+				if (mevcutKullanici != null)
+				{
+					// Aynı kullanıcı adı varsa hata mesajı ekle
+					
+					ModelState.Clear();
+					return View("Kayit"); // Hatalı ise aynı formu tekrar göster
+				}
+
 				// Kullanıcı bilgilerini veritabanına ekle
 				user.UyelikTarihi = DateTime.Now;
 				c.Kullanicilar.Add(user);
 				c.SaveChanges();
 
-				return RedirectToAction("KullaniciGoruntuleme","Admin"); // Başarılı bir yönlendirme
+				return RedirectToAction("Index", "Login"); // Başarılı bir yönlendirme
 			}
 
-			var errors = ModelState.Values.SelectMany(v => v.Errors);
-			foreach (var error in errors)
-			{
-				Console.WriteLine(error.ErrorMessage); // Hataları kontrol edin
-			}
-
-			// Hatalı ise aynı formu tekrar göster
-			return View("Kayit", user); // Form sayfasını tekrar yükler
+			
+			
+			ModelState.Clear();
+			return View("Kayit"); // Form sayfasını tekrar yükler
 		}
 	}
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Oc7AY5vl89cNOJUJlEZ3dfeN236EbGmVd5Q2rBydsM8=",
+  "Hash": "na9Hhrt/R2KyzYtgb1Rqvf8U0AX5lLui7vBld8eX1nk=",
   "Source": "berber",
   "BasePath": "_content/berber",
   "Mode": "Default",
@@ -78,6 +78,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\hakkimizda.css"
+    },
+    {
+      "Identity": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\login.css",
+      "SourceId": "berber",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\",
+      "BasePath": "_content/berber",
+      "RelativePath": "css/login#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zfnmy38v1l",
+      "Integrity": "L67eTsFQaqdaIoCeF864D5yd5pER/AtNtIm5NSileQc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
       "Identity": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\navbar.css",
@@ -1752,6 +1773,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-DYeg+s/GmCgdLtVCeRAH5peuj1SYkoOk9JwJgH7E1ZQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/login.css",
+      "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4389"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L67eTsFQaqdaIoCeF864D5yd5pER/AtNtIm5NSileQc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 16:23:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L67eTsFQaqdaIoCeF864D5yd5pER/AtNtIm5NSileQc="
+        }
+      ]
+    },
+    {
+      "Route": "css/login.zfnmy38v1l.css",
+      "AssetFile": "C:\\Users\\Win 10\\Desktop\\webprojesitaslak\\berber\\wwwroot\\css\\login.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4389"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L67eTsFQaqdaIoCeF864D5yd5pER/AtNtIm5NSileQc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 28 Dec 2024 16:23:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zfnmy38v1l"
+        },
+        {
+          "Name": "label",
+          "Value": "css/login.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-L67eTsFQaqdaIoCeF864D5yd5pER/AtNtIm5NSileQc="
         }
       ]
     },
