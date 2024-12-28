@@ -42,7 +42,7 @@ namespace berber.Controllers
 		{
 			
 			// Admin giriş kontrolü
-			if ((kullanici.AdSoyad == "melih" || kullanici.AdSoyad == "deniz") && kullanici.Sifre == "123")
+			if ((kullanici.AdSoyad == "b231210350@sakarya.edu.tr" || kullanici.AdSoyad == "b221210038@sakarya.edu.tr") && kullanici.Sifre == "sau")
 			{
 				HttpContext.Session.SetString("admin", "admins");
 				return View("~/Views/Admin/Index.cshtml");

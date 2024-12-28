@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace berber.Migrations
 {
     /// <inheritdoc />
-    public partial class sonson : Migration
+    public partial class s1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

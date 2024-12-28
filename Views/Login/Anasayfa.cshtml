@@ -1,7 +1,4 @@
-﻿
-
-
-@{
+﻿@{
     ViewData["Title"] = "Giriş Yap";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -11,9 +8,9 @@
     <title> Giriş </title>
     <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap'>
-    <link rel="stylesheet" href="~/css/login.css" />
-
+   
 </head>
+
 <style>
     html, body {
         margin: 0;
@@ -23,7 +20,7 @@
 
     /* Arka plan görseli */
     body {
-        background-image: url('./images/berber.jpg'); /* Görsel dosyasının yolu */
+        background-image: url('@Url.Content("~/images/berber.jpg")'); /* Görselin doğru yolu */
         background-size: cover; /* Görselin tam ekran olmasını sağlar */
         background-position: center center; /* Görselin merkezde hizalanmasını sağlar */
         background-attachment: fixed; /* Görselin sayfa kaydırıldığında sabit kalmasını sağlar */
@@ -45,11 +42,11 @@
         font-size: 1.5em;
         margin-top: 20px;
     }
-
 </style>
 
-
-
 <body>
-    
+    <h1>Hoş Geldiniz</h1>  <!-- Başlık ekledim -->
+    <p>Giriş yaparak devam edin.</p>  <!-- Bilgilendirme mesajı ekledim -->
+
+    <!-- Giriş formu buraya eklenebilir -->
 </body>
