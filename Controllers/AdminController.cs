@@ -7,7 +7,7 @@ namespace berber.Controllers
 {
 	public class AdminController : Controller
 	{
-		Context c = new Context();
+		Context c = new();
 		public IActionResult Index()
 		{
 			if (HttpContext.Session.GetString("admin") is not null)

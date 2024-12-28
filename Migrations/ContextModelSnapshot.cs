@@ -44,7 +44,7 @@ namespace berber.Migrations
 
                     b.HasKey("CalisanID");
 
-                    b.ToTable("Calisanlar");
+                    b.ToTable("Calisanlar", (string)null);
                 });
 
             modelBuilder.Entity("berber.Models.CalisanIslem", b =>
@@ -67,7 +67,7 @@ namespace berber.Migrations
 
                     b.HasIndex("IslemID");
 
-                    b.ToTable("CalisanIslemler");
+                    b.ToTable("CalisanIslemler", (string)null);
                 });
 
             modelBuilder.Entity("berber.Models.Islem", b =>
@@ -90,7 +90,7 @@ namespace berber.Migrations
 
                     b.HasKey("IslemID");
 
-                    b.ToTable("Islemler");
+                    b.ToTable("Islemler", (string)null);
                 });
 
             modelBuilder.Entity("berber.Models.Kullanici", b =>
@@ -118,7 +118,7 @@ namespace berber.Migrations
 
                     b.HasKey("KullaniciID");
 
-                    b.ToTable("Kullanicilar");
+                    b.ToTable("Kullanicilar", (string)null);
                 });
 
             modelBuilder.Entity("berber.Models.Randevu", b =>
@@ -147,7 +147,7 @@ namespace berber.Migrations
 
                     b.HasIndex("KullaniciID");
 
-                    b.ToTable("Randevular");
+                    b.ToTable("Randevular", (string)null);
                 });
 
             modelBuilder.Entity("berber.Models.RandevuIslem", b =>
@@ -170,7 +170,7 @@ namespace berber.Migrations
 
                     b.HasIndex("RandevuID");
 
-                    b.ToTable("RandevuIslemler");
+                    b.ToTable("RandevuIslemler", (string)null);
                 });
 
             modelBuilder.Entity("berber.Models.CalisanIslem", b =>

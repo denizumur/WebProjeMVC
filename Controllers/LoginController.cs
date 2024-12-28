@@ -13,7 +13,7 @@ namespace berber.Controllers
 {
 	public class LoginController : Controller
 	{
-		Context c = new Context();
+		Context c = new();
 
 		private readonly ILogger<LoginController> _logger;
 		private readonly IConfiguration _configuration;

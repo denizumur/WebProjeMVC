@@ -8,10 +8,15 @@ namespace berber.Models
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-QGB5KU5\\SQLEXPRESS; database=berber2 ; integrated security=true; TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("server=DESKTOP-KRGVO7T\\SQLEXPRESS; database=berber32 ; integrated security=true; TrustServerCertificate=True;");
+        }
+        public Context(DbContextOptions<Context> options) : base(options) { }
+
+        public Context()
+        {
         }
 
-		public DbSet<Kullanici> Kullanicilar { get; set; }
+        public DbSet<Kullanici> Kullanicilar { get; set; }
 		public DbSet<Calisan> Calisanlar { get; set; }
         public DbSet<Islem> Islemler { get; set; }
         public DbSet<Randevu> Randevular { get; set; }

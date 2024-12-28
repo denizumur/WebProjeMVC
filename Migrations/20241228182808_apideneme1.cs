@@ -5,7 +5,7 @@
 namespace berber.Migrations
 {
     /// <inheritdoc />
-    public partial class sonhal : Migration
+    public partial class apideneme1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
