@@ -24,6 +24,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hbviosdhke"},{"Name":"integrity","Value":"sha256-DYeg\u002Bs/GmCgdLtVCeRAH5peuj1SYkoOk9JwJgH7E1ZQ="},{"Name":"label","Value":"_content/berber/css/hakkimizda.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1349"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022DYeg\u002Bs/GmCgdLtVCeRAH5peuj1SYkoOk9JwJgH7E1ZQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 28 Dec 2024 12:00:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/berber/css/login.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\login.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-L67eTsFQaqdaIoCeF864D5yd5pER/AtNtIm5NSileQc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4389"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022L67eTsFQaqdaIoCeF864D5yd5pER/AtNtIm5NSileQc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 28 Dec 2024 16:23:21 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/berber/css/login.zfnmy38v1l.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\login.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zfnmy38v1l"},{"Name":"integrity","Value":"sha256-L67eTsFQaqdaIoCeF864D5yd5pER/AtNtIm5NSileQc="},{"Name":"label","Value":"_content/berber/css/login.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4389"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022L67eTsFQaqdaIoCeF864D5yd5pER/AtNtIm5NSileQc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 28 Dec 2024 16:23:21 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/berber/css/navbar.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\navbar.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
